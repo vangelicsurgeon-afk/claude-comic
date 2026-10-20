@@ -1,9 +1,8 @@
-/* Neutral default theme. The comic's own look is decided in bible/style.md;
-   restyle this file to match. */
-:root { --bg:#fbfaf7; --fg:#1b1b1b; --muted:#6b6b6b; --accent:#b4432d; --card:#fff; --line:#e4e0d8; }
-@media (prefers-color-scheme: dark) { :root { --bg:#161616; --fg:#eee; --muted:#9a9a9a; --accent:#e07a5f; --card:#1f1f1f; --line:#333; } }
+/* Department of Small Miracles theme: teal + mustard, matches bible/style.md. */
+:root { --bg:#fbf6ea; --fg:#2a2433; --muted:#6b6470; --accent:#2f6f73; --card:#fff; --line:#d9cfb6; }
+@media (prefers-color-scheme: dark) { :root { --bg:#1c2230; --fg:#f2ecdc; --muted:#a9a6b3; --accent:#e0a93b; --card:#262d3f; --line:#3a4358; } }
 * { box-sizing:border-box; }
-body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 Georgia, "Times New Roman", serif; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 "Comic Neue", "Comic Sans MS", system-ui, sans-serif; }
 a { color:var(--accent); }
 .site-header, main, .site-footer { max-width:1040px; margin:0 auto; padding:0 16px; }
 .site-header { padding-top:28px; text-align:center; }
