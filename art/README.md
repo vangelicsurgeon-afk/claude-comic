@@ -5,10 +5,10 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
 
 ## Characters (`art/characters/`)
 `draw(pose, expression, facing="right")` returns an SVG fragment, origin at the feet.
-- **margo.py** (~235 tall): poses `stand, point, shrug, hold, arms_up, sit_desk`
-  (sit_desk = long torso with no legs, for standing behind a desk).
+- **margo.py** (~235 tall): poses `stand, point, shrug, hold (carries a folder), arms_up`
+  (for desk scenes, stand her behind `props.desk`).
   Expressions `neutral, deadpan, happy, worried, surprised, smug, annoyed`.
-- **pip.py** (~120 tall): poses `stand, point, wave, hold, arms_up, slump`.
+- **pip.py** (~120 tall): poses `stand, point, wave, hold, arms_up, slump` (slump forces a sad face and squashes the body).
   Expressions `neutral, happy, worried, surprised, proud, sad, flustered`.
   Flame height reflects mood.
 

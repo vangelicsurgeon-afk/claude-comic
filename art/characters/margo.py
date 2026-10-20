@@ -1,10 +1,11 @@
 """Margo Voss, senior caseworker. Origin at the feet, ~235 units tall, drawn facing right.
 
 draw(pose, expression, facing) -> SVG fragment string.
-poses: stand, point, shrug, hold, arms_up, sit_desk (torso only, for behind a desk)
+poses: stand, point, shrug, hold, arms_up, (for desk scenes, stand her behind props.desk)
 expressions: neutral, deadpan, happy, worried, surprised, smug, annoyed
 """
 from ..palette import *
+from ..props import folder
 
 SHOULDERS = {"L": (-26, -146), "R": (26, -146)}
 
@@ -12,7 +13,7 @@ POSES = {  # hand targets (L, R) and elbow bend offsets
     "stand":   {"L": (-34, -94), "R": (34, -94)},
     "point":   {"L": (-32, -96), "R": (86, -156)},
     "shrug":   {"L": (-58, -128), "R": (58, -128)},
-    "hold":    {"L": (-8, -104), "R": (40, -116)},
+    "hold":    {"L": (6, -100), "R": (40, -104)},
     "arms_up": {"L": (-52, -206), "R": (52, -206)},
 }
 
@@ -46,9 +47,9 @@ def _face(expression):
     E = {
         "neutral":  dict(o=1.0, b=((-20, -20, -6, -22), (6, -22, 20, -20)), m="M-7,18 L7,18"),
         "deadpan":  dict(o=0.55, b=((-20, -19, -6, -19), (6, -19, 20, -19)), m="M-7,19 L7,19"),
-        "happy":    dict(o=1.0, b=((-20, -22, -6, -26), (6, -26, 20, -22)), m="M-10,14 Q0,26 10,14"),
+        "happy":    dict(o=0.8, b=((-20, -20, -6, -26), (6, -26, 20, -20)), m="M-13,12 Q0,34 13,12 Z"),
         "worried":  dict(o=1.0, b=((-20, -16, -6, -24), (6, -24, 20, -16)), m="M-9,21 Q0,12 9,21"),
-        "surprised":dict(o=1.0, b=((-20, -28, -6, -29), (6, -29, 20, -28)), m=None),
+        "surprised":dict(o=1.0, b=((-20, -34, -6, -38), (6, -38, 20, -34)), m=None),
         "smug":     dict(o=0.6, b=((-20, -20, -6, -22), (6, -26, 20, -22)), m="M-9,18 Q4,22 11,13"),
         "annoyed":  dict(o=0.7, b=((-20, -22, -6, -16), (6, -16, 20, -22)), m="M-8,20 Q0,16 8,20"),
     }[expression]
@@ -61,13 +62,13 @@ def _face(expression):
     if E["m"]:
         mouth = path(E["m"], w=3.6)
     else:
-        mouth = ellipse(0, 20, 5, 6.5, fill="#6b2f2f", w=3)
+        mouth = ellipse(0, 22, 7, 9, fill="#6b2f2f", w=3)
     return eyes + glasses + brow + mouth
 
 
 def draw(pose="stand", expression="neutral", facing="right"):
     parts = []
-    if pose != "sit_desk":
+    if True:
         # legs + shoes
         for x in (-12, 12):
             parts.append(line(x, -62, x, -8, w=14, c=INK))
@@ -79,26 +80,21 @@ def draw(pose="stand", expression="neutral", facing="right"):
         for y in (-132, -108, -84):
             parts.append(circle(7, y, 3.2, fill=INK, w=0))
         parts.append(path("M-34,-62 Q0,-52 34,-62", stroke=INK, w=3))
-    else:
-        parts.append(path("M-34,0 L-28,-152 Q0,-164 28,-152 L34,0 Z", fill=MUSTARD))
-        parts.append(line(0, -156, 0, 0, w=3))
-        for y in (-132, -108, -84):
-            parts.append(circle(7, y, 3.2, fill=INK, w=0))
     # collar + neck
     parts.append(rect(-8, -166, 16, 16, fill=SKIN_MARGO, sw=3.5))
     parts.append(path("M-18,-152 L0,-140 L18,-152", stroke=INK, w=3.5, fill=PAPER))
     # arms (far arm first so the near arm overlaps)
-    hands = POSES["stand" if pose == "sit_desk" else pose]
-    if pose == "sit_desk":
-        hands = {"L": (-36, -70), "R": (40, -66)}
+    hands = POSES[pose]
     parts.append(_arm("L", hands["L"]))
     parts.append(_arm("R", hands["R"]))
+    if pose == "hold":
+        parts.append(f'<g transform="translate(26,-92)">{folder()}</g>')
     # head
     hx, hy = 0, -196
     parts.append(f'<g transform="translate({hx},{hy})">')
-    parts.append(circle(-24, -22, 15, fill=HAIR_GREY))  # bun, back of head
+    parts.append(circle(-14, -40, 17, fill=HAIR_GREY))  # bun, back of head
     parts.append(circle(0, 0, 36, fill=SKIN_MARGO))
-    parts.append(path("M-36,-4 Q-36,-40 0,-40 Q34,-40 36,-8 Q18,-36 -6,-31 Q-26,-30 -36,-4 Z",
+    parts.append(path("M-36,-4 Q-36,-40 0,-40 Q34,-40 36,-8 Q18,-40 -6,-36 Q-26,-34 -36,-4 Z",
                       fill=HAIR_GREY, w=3.5))
     parts.append(f'<g transform="translate(0,4)">{_face(expression)}</g>')
     parts.append("</g>")

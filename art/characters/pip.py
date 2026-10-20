@@ -20,7 +20,7 @@ POSES = {
 def _flame(expression):
     k = {"happy": 1.25, "proud": 1.4, "neutral": 1.0, "surprised": 1.35, "worried": 0.8,
          "sad": 0.5, "flustered": 1.1}[expression]
-    lean = {"flustered": 10, "worried": -4}.get(expression, 0)
+    lean = {"flustered": 22, "worried": -4}.get(expression, 0)
     h = 30 * k
     base = -104
     outer = (f"M-11,{base} Q-14,{base - h * 0.5:.1f} {lean * 0.5:.1f},{base - h:.1f} "
@@ -44,20 +44,20 @@ def _face(expression):
     elif expression == "happy":
         mouth = path("M-8,-48 Q0,-36 8,-48 Z", fill="#6b2f2f", w=3)
     elif expression == "proud":
-        mouth = path("M-8,-47 Q0,-38 8,-47", w=3.2)
+        mouth = path("M-9,-48 Q4,-36 11,-50", w=3.4)
         brows = line(-21, cy - 16, -6, cy - 17, w=3) + line(6, cy - 17, 21, cy - 16, w=3)
     elif expression == "worried":
         brows = line(-21, cy - 12, -7, cy - 19, w=3) + line(7, cy - 19, 21, cy - 12, w=3)
         mouth = path("M-6,-42 Q0,-48 6,-42", w=3.2)
     elif expression == "sad":
         eyes = eye(-13, h=0.8, look=0) + eye(13, h=0.8, look=0)
-        brows = line(-21, cy - 10, -7, cy - 18, w=3) + line(7, cy - 18, 21, cy - 10, w=3)
-        mouth = path("M-6,-41 Q0,-49 6,-41", w=3.2)
-        cheeks += path("M-13,-52 Q-15,-44 -13,-40", stroke="#7fb7e8", w=3)
+        brows = line(-22, cy - 6, -6, cy - 18, w=3.4) + line(6, cy - 18, 22, cy - 6, w=3.4)
+        mouth = path("M-7,-39 Q0,-50 7,-39", w=3.4)
+        cheeks += path("M-13,-56 Q-18,-46 -13,-38 Q-8,-46 -13,-56 Z", fill="#7fb7e8", w=2)
     elif expression == "surprised":
         eyes = eye(-13, r=10, look=0) + eye(13, r=10, look=0)
-        brows = line(-21, cy - 18, -6, cy - 20, w=3) + line(6, cy - 20, 21, cy - 18, w=3)
-        mouth = ellipse(0, -44, 4.5, 6, fill="#6b2f2f", w=3)
+        brows = line(-21, cy - 24, -6, cy - 28, w=3) + line(6, cy - 28, 21, cy - 24, w=3)
+        mouth = ellipse(0, -43, 6.5, 9, fill="#6b2f2f", w=3)
     elif expression == "flustered":
         eyes = eye(-13, r=8, look=-3) + eye(13, r=10, look=-3)
         brows = line(-21, cy - 14, -7, cy - 18, w=3) + line(7, cy - 16, 21, cy - 12, w=3)
@@ -78,12 +78,16 @@ def draw(pose="stand", expression="neutral", facing="right"):
     parts = []
     squash = 4 if pose == "slump" else 0
     parts.append(ellipse(-14, -3, 12, 6, fill=INK, w=3) + ellipse(14, -3, 12, 6, fill=INK, w=3))
-    parts.append(_flame(expression))
+    if pose == "slump":
+        parts.append('<g transform="scale(1,0.86)">')
+    parts.append(_flame("sad" if pose == "slump" else expression))
     body = (f"M-38,-10 Q-46,-60 -30,-92 Q0,-120 30,-92 Q46,-60 38,-10 Q0,{2 - squash} -38,-10 Z")
     parts.append(path(body, fill=LAVENDER))
     parts.append(path("M-26,-30 Q0,-24 26,-30", stroke="#cdbff0", w=3))  # belly crease
     hands = POSES[pose]
     parts.append(_arm("L", hands["L"]))
     parts.append(_arm("R", hands["R"]))
-    parts.append(_face(expression))
+    parts.append(_face("sad" if pose == "slump" else expression))
+    if pose == "slump":
+        parts.append("</g>")
     return flip_group("".join(parts), facing)

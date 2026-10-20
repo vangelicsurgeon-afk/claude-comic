@@ -17,10 +17,10 @@ def label(p, text, x, y, size=16):
 def sheet(name, mod, poses, exprs, head_pose, scale, foot, cell_h, head_crop):
     cols = max(len(poses), len(exprs))
     W = 190 * cols + 40
-    H = 60 + cell_h + 60 + 60 + 250 + 20
+    H = 60 + cell_h + 60 + 60 + 275
     s = Strip(width=W, height=H, cols=1, rows=1, margin=0, gutter=0, title=f"{name} model sheet")
     p = s.panels[0]; p.border_width = 0; p.background(PAPER)
-    label(p, f"{name.upper()} – poses (neutral face)", W / 2, 32, 22)
+    label(p, f"{name.upper()} – poses and expressions (Margo ~235 tall, Pip ~120 tall at scale 1)", W / 2, 32, 22)
     for i, po in enumerate(poses):
         x = 20 + 95 + i * 190
         p.add(mod.draw(po, "neutral"), x=x, y=60 + cell_h, scale=scale)
@@ -34,7 +34,7 @@ def sheet(name, mod, poses, exprs, head_pose, scale, foot, cell_h, head_crop):
     s.save(OUT / f"{name}.svg")
 
 
-sheet("margo", margo, ["stand", "point", "shrug", "hold", "arms_up", "sit_desk"],
+sheet("margo", margo, ["stand", "point", "shrug", "hold", "arms_up"],
       ["neutral", "deadpan", "happy", "worried", "surprised", "smug", "annoyed"],
       "stand", 0.8, 0, 200, (190, 1.0))
 sheet("pip", pip, ["stand", "point", "wave", "hold", "arms_up", "slump"],
