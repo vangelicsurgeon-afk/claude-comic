@@ -19,8 +19,8 @@ Anything not written down is lost.
 
 ## 0. Preflight (every run)
 
-1. `python3 -c "import resvg_py, fontTools" || pip install resvg-py fonttools`
-   (add `--break-system-packages` if pip refuses).
+1. `python3 -m pip install -r requirements.txt` (add `--break-system-packages`
+   if needed) so the dependencies go into whichever `python3` is active.
 2. `python3 tools/smoke_test.py`. If it fails, fix the tool if you can. Otherwise
    log the failure in `runs/LOG.md`, commit, push and stop.
 3. Read the last 3 entries of `runs/LOG.md` for problems or notes left by earlier runs.
