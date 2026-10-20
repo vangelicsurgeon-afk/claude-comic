@@ -1,0 +1,27 @@
+/* Neutral default theme. The comic's own look is decided in bible/style.md;
+   restyle this file to match. */
+:root { --bg:#fbfaf7; --fg:#1b1b1b; --muted:#6b6b6b; --accent:#b4432d; --card:#fff; --line:#e4e0d8; }
+@media (prefers-color-scheme: dark) { :root { --bg:#161616; --fg:#eee; --muted:#9a9a9a; --accent:#e07a5f; --card:#1f1f1f; --line:#333; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.55 Georgia, "Times New Roman", serif; }
+a { color:var(--accent); }
+.site-header, main, .site-footer { max-width:1040px; margin:0 auto; padding:0 16px; }
+.site-header { padding-top:28px; text-align:center; }
+.site-header h1 { margin:0; font-size:2.2rem; letter-spacing:.02em; }
+.site-header h1 a { color:inherit; text-decoration:none; }
+.tagline { margin:.25rem 0 .75rem; color:var(--muted); font-style:italic; }
+.site-nav { display:flex; gap:18px; justify-content:center; flex-wrap:wrap; padding-bottom:14px; border-bottom:1px solid var(--line); }
+.comic-nav { display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin:18px 0; font-family:system-ui, sans-serif; font-size:.95rem; }
+.comic-nav a, .comic-nav span { padding:6px 12px; border:1px solid var(--line); border-radius:6px; text-decoration:none; background:var(--card); }
+.comic-nav .disabled { color:var(--muted); opacity:.5; }
+.ep-title { text-align:center; margin:8px 0 12px; font-size:1.4rem; }
+.ep-num { color:var(--muted); font-weight:normal; }
+.comic { margin:0; }
+.comic img { display:block; width:100%; height:auto; background:#fff; border-radius:2px; box-shadow:0 1px 8px rgba(0,0,0,.12); }
+.ep-date { text-align:center; color:var(--muted); font-size:.9rem; }
+.ep-note { max-width:680px; margin:20px auto; padding:14px 18px; background:var(--card); border-left:3px solid var(--accent); }
+.transcript { max-width:680px; margin:12px auto; color:var(--muted); font-size:.95rem; }
+.archive ol { padding-left:1.4em; } .archive li { margin:6px 0; } .archive time { color:var(--muted); font-size:.85rem; margin-left:6px; }
+.coming-soon { text-align:center; padding:80px 0; color:var(--muted); font-style:italic; }
+.about { max-width:680px; margin:24px auto; }
+.site-footer { margin-top:40px; padding:20px 16px 40px; border-top:1px solid var(--line); text-align:center; color:var(--muted); font-size:.9rem; }
