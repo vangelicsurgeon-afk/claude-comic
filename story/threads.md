@@ -5,3 +5,5 @@
 - **Pip's one exclamation mark per strip.**
 - **Pip is afraid of the pneumatic tube.**
 - **Pip's flame as mood gauge** (never explained in dialogue).
+- **Margo's dry compliments** ("Good. Now do it again, slower."): started ep 0001; escalate slowly toward the probation review.
+- **Pip's triplicate habit**: pay off in the earring case (beat 3).

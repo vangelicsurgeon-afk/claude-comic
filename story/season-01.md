@@ -3,7 +3,7 @@ Pip's first ~12 weeks. Arc: Pip learns the forms; Margo learns why she stopped
 looking up from them. Ends with Pip's probation review.
 
 Beats (guide, not script; mark [x] when done):
-1. [ ] Orientation: Margo hands Pip a stamp and a folder. First rule: the paperwork *is* the miracle.
+1. [x] (ep 0001) Orientation: Margo hands Pip a stamp and a folder. First rule: the paperwork *is* the miracle.
 2. [ ] The pneumatic tube: Pip is afraid of it; the first *fwump*.
 3. [ ] A case: lost earring. Pip wants to just place it; Margo insists on triplicate.
 4. [ ] The window is always night. Pip asks why. Margo: "It's a good view."
