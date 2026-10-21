@@ -13,3 +13,4 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 - **Relationships:** Pip (assigned mentee, reluctantly adored); Director Hollis
   (has never met; accepts the notes without complaint).
 - **Kit:** `art/characters/margo.py`. Model sheet `art/model-sheets/margo.png`.
+- **Discovered (0002):** startles at the pneumatic tube and deflects with a specific, flimsy excuse. Never admits it.

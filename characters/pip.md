@@ -13,3 +13,4 @@ Newly assigned to Margo. Exact age: "since Thursday."
   things?"
 - **Relationships:** Margo (idol-in-denial); the pneumatic tube (afraid of it).
 - **Kit:** `art/characters/pip.py`. Model sheet `art/model-sheets/pip.png`.
+- **Discovered (0002):** afraid of the tube but does the thing anyway; notices Margo's tells and says them out loud, kindly.

@@ -3,7 +3,8 @@
 - **Director Hollis's notes**, always signed "H.", always one word too vague.
 - **Margo's button tin / the very old file in her drawer.** Unexplained; pay off around beat 8 and 11.
 - **Pip's one exclamation mark per strip.**
-- **Pip is afraid of the pneumatic tube.**
+- **Pip is afraid of the pneumatic tube.** Ep 0002: Pip takes the first folder out. Now a shared fear: Margo also startles at it and denies it ("I was reaching for a pen"). Callback: Margo's desk is as far from the tube as possible; a later episode can pay off why (she once got a very bad note by tube).
+- **Margo's flimsy excuses** when caught caring/flinching; rotate, never admit.
 - **Pip's flame as mood gauge** (never explained in dialogue).
 - **Margo's dry compliments** ("Good. Now do it again, slower."): started ep 0001; escalate slowly toward the probation review.
 - **Pip's triplicate habit**: pay off in the earring case (beat 3).

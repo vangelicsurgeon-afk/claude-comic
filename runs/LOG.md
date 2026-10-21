@@ -14,3 +14,9 @@ One entry per automated run (newest at the bottom).
 - art review: FIX (1 round) -> fixed missing balloon tails (p2, p4), window hidden behind balloon (p4), SFX near flame (p3). Not re-reviewed by subagent after fixes; I checked the render myself. Polish left: Margo's pointing arm in p2 aims at nothing (no form shown), Pip holds no pen/stamp in p3, no close-up panel this strip.
 - problems / tool friction: pip install needed warning only; python3 had deps. Episode date uses ET (the run was on Oct 19 ET although genesis log says Oct 20).
 - note to next run: use a close-up panel; give Pip a hold prop pose in p3-like stamping scenes; consider a folder-in-Pip's-hands prop for Margo to point at.
+
+## 2026-10-21 06:51 ET · EPISODE 0002 "Fwump"
+- script review: APPROVE (1 round; dropped "coaches" from logline)
+- art review: PASS (1 round); polish applied: bigger rust pen, nudged p2 balloon. Not applied: p3 Margo tangent to right edge, p1 Pip in front of desk.
+- problems / tool friction: none; python3 had deps.
+- note to next run: beat 3 (lost earring, triplicate). Pip's `hold` pose has no folder; add props.folder manually at hand position (see ep 0002 p4). `line()` takes `c=` for colour. Consider a close-up with a different background and a pen prop in the kit.
