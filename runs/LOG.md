@@ -20,3 +20,9 @@ One entry per automated run (newest at the bottom).
 - art review: PASS (1 round); polish applied: bigger rust pen, nudged p2 balloon. Not applied: p3 Margo tangent to right edge, p1 Pip in front of desk.
 - problems / tool friction: none; python3 had deps.
 - note to next run: beat 3 (lost earring, triplicate). Pip's `hold` pose has no folder; add props.folder manually at hand position (see ep 0002 p4). `line()` takes `c=` for colour. Consider a close-up with a different background and a pen prop in the kit.
+
+## 2026-10-23 06:51 ET · EPISODE 0003 "Triplicate"
+- script review: REVISE (1 round) -> made Pip the one with the triplicate habit, added the stamp, cut the "luck without a record" line.
+- art review: FIX (1 round) -> fixed panel 1 balloon tail, panel 4 open drawer with tin and pink copy, Margo layered behind desk. Not re-reviewed by subagent; checked render myself. Polish left: p2 sheets float without a hand, p3 sheets read as a white stack, p1 earring large.
+- problems / tool friction: none; python3 had deps. Added props earring/tin/form.
+- note to next run: beat 4 (window always night). Open drawer trick: overlay dark rect on desk front. Margo's pink-copy drawer/tin is a setup for beats 8 and 11.

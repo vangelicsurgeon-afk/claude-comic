@@ -24,7 +24,7 @@ p.add(props.folder(MUSTARD), x=100, y=FY - 70, scale=1.0)
 p.add(props.earring(), x=235, y=FY - 70, scale=1.6)
 p.add(pip.draw("stand", "happy", "left"), x=400, y=FY + 40, scale=0.95)
 p.balloon("Case 4471. One earring, silver. Last seen Tuesday.", 10, 12, tail=(170, 125), max_width=220)
-p.balloon("It's in her coat. We could just put it there.", 250, 100, tail=(400, 195), max_width=210)
+p.balloon("It's in her coat. We could just put it there.", 262, 120, tail=(405, 232), max_width=200)
 
 # 2  close-up Margo, Pip's three forms
 p = P[1]; stage(p)
@@ -46,11 +46,12 @@ p.sfx("CHUNK", 300, 200, size=40, rotate=-6)
 
 # 4  drawer
 p = P[3]; stage(p)
+p.add(margo.draw("stand", "neutral", "left"), x=W - 120, y=FY - 10, scale=0.85)
 p.add(props.desk(300), x=W - 170, y=FY - 70)
-p.add(props.tin(), x=W - 110, y=FY - 70, scale=1.2)
-p.add(props.form("#ffd6dc"), x=W - 220, y=FY - 70, scale=0.9)
+p.add(rect(W - 170 - 150 + 30, FY - 40, 90, 56, fill="#2a2433", sw=3))
+p.add(props.tin(), x=W - 170 - 150 + 75, y=FY + 12, scale=1.1)
+p.add(props.form("#ffd6dc"), x=W - 170 - 150 + 85, y=FY - 30, scale=0.9)
 p.add(pip.draw("stand", "neutral", "right"), x=70, y=FY + 40, scale=0.95)
-p.add(margo.draw("stand", "deadpan", "left"), x=W - 170, y=FY - 10, scale=0.85)
-p.balloon("Someone who might come looking.", 100, 14, tail=(W - 170, 95), max_width=240)
+p.balloon("Someone who might come looking.", 100, 14, tail=(W - 120, 95), max_width=240)
 
 s.save(pathlib.Path(__file__).parent / "comic.svg")
