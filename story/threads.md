@@ -8,3 +8,5 @@
 - **Pip's flame as mood gauge** (never explained in dialogue).
 - **Margo's dry compliments** ("Good. Now do it again, slower."): started ep 0001; escalate slowly toward the probation review.
 - **Pip's triplicate habit**: pay off in the earring case (beat 3).
+- **Pink third copy (ep 0003):** Margo keeps every third copy in her drawer "for someone who might come looking." Pay off with the button tin / old file (beats 8, 11): someone did come looking once.
+- **Pip's triplicate habit:** paid off in ep 0003 (Pip does it unprompted). Retire or use sparingly.

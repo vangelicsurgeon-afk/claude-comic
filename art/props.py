@@ -8,6 +8,9 @@ clipboard()        origin: top-left of the board, ~52x66
 stamp()            origin: bottom-centre; rubber stamp ~30 tall
 paper_stack(n)     origin: bottom-centre; n sheets ~50 wide
 window(night)      origin: top-left; 120x150 window
+earring(scale)     origin: bottom-centre; silver hoop ~26 tall (draw it big for close-ups)
+tin()              origin: bottom-centre; round button tin ~40 wide, lid slightly ajar
+form(color)        origin: bottom-centre; one flat sheet ~44x56 (white, pink, yellow copies)
 office_bg(w, h, ...) full-panel background: wall, floor line, optional window
 """
 from .palette import *
@@ -68,6 +71,21 @@ def window(night=True):
     out += line(60, 0, 60, 150, w=5) + line(0, 75, 120, 75, w=5)
     out += rect(-8, 150, 136, 10, fill=WOOD, sw=4, r=2)
     return out
+
+
+def earring():
+    return (circle(0, -14, 12, fill="none", stroke=INK, w=6) + circle(0, -14, 12, fill="none", stroke="#c9ced6", w=3)
+            + circle(0, -29, 3.5, fill="#c9ced6", w=2.5))
+
+
+def tin():
+    return (rect(-20, -22, 40, 22, fill=RUST, sw=3.5, r=3) + rect(-22, -30, 44, 9, fill=MUSTARD, sw=3.5, r=3)
+            + circle(-8, -10, 3, fill=PAPER, w=2) + circle(6, -12, 3, fill=PAPER, w=2))
+
+
+def form(color="#ffffff"):
+    return (rect(-22, -56, 44, 56, fill=color, sw=3, r=1)
+            + line(-14, -42, 14, -42, w=2.5) + line(-14, -32, 14, -32, w=2.5) + line(-14, -22, 4, -22, w=2.5))
 
 
 def office_bg(w, h, floor_y=None, window_at=None, night=False):

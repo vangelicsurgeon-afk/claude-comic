@@ -11,3 +11,8 @@ New facts: Margo's dry compliment is her love language, first example. Pip is ca
 Pip is afraid of the pneumatic tube. Margo coaches them ("It's a folder.") and the first case arrives with a FWUMP; Pip leaps, but so does Margo, who denies it ("I was reaching for a pen").
 Appeared: Margo, Pip.
 New facts: the tube mouth is a brass hatch that spits a mustard folder; the tube's sound is "FWUMP". Margo is also startled by the tube (never admitted). Margo's deflections are specific and flimsy. Pip is calling out her tells ("You jumped.") without malice.
+
+## 0003 – Triplicate (2026-10-23)
+Case 4471, a lost silver earring. Pip suggests just putting it back in her coat; Margo asks if the form is done, and Pip already has it signed, dated and in triplicate. Pip stamps it and asks who keeps the third copy. Margo: "Someone who might come looking."
+Appeared: Margo, Pip.
+New facts: case numbers exist (4471). Triplicate copies are white / yellow / pink; the pink third copy goes in Margo's desk drawer, next to her tin of buttons (tin shown on-page, still unexplained). Pip's triplicate habit is established as theirs, not Margo's. Pip stamps the form themself. Props added: earring, tin, form.
