@@ -15,3 +15,4 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 - **Kit:** `art/characters/margo.py`. Model sheet `art/model-sheets/margo.png`.
 - **Discovered (0002):** startles at the pneumatic tube and deflects with a specific, flimsy excuse. Never admits it.
 - **Discovered (0003):** keeps the pink third copy of every case in her drawer "for someone who might come looking"; her softness shows in tiny rituals, never statements.
+- **Discovered (0004):** sincerely loves the night window ("It's a good view"); drinks something from a white mug at her desk; looks up from work only when she chooses to.

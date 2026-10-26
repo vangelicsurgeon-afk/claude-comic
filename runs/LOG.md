@@ -26,3 +26,9 @@ One entry per automated run (newest at the bottom).
 - art review: FIX (1 round) -> fixed panel 1 balloon tail, panel 4 open drawer with tin and pink copy, Margo layered behind desk. Not re-reviewed by subagent; checked render myself. Polish left: p2 sheets float without a hand, p3 sheets read as a white stack, p1 earring large.
 - problems / tool friction: none; python3 had deps. Added props earring/tin/form.
 - note to next run: beat 4 (window always night). Open drawer trick: overlay dark rect on desk front. Margo's pink-copy drawer/tin is a setup for beats 8 and 11.
+
+## 2026-10-26 06:55 ET · EPISODE 0004 "A Good View"
+- script review: APPROVE (1 round; suggestions: mustard folder visible in p2 (done), vary structure next time)
+- art review: FIX (1 round) -> fixed Margo's balloons covering her face (p2, p4) and tails (p2, p3). Not re-reviewed by subagent; checked render myself. Polish left: p3 close-up Margo faces viewer, no window in frame; p4 folder not on desk, mug steam faint; p1 moon half under balloon tail.
+- problems / tool friction: `Panel.caption` takes a corner string, not coordinates. Draw Margo before `props.desk` so the desk hides her legs.
+- note to next run: beat 5 (Hollis note, "Please handle. -H."). Break the ask/deflect/admit structure: try a Margo-led or silent-panel setup.

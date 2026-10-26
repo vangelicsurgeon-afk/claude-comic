@@ -10,3 +10,5 @@
 - **Pip's triplicate habit**: pay off in the earring case (beat 3).
 - **Pink third copy (ep 0003):** Margo keeps every third copy in her drawer "for someone who might come looking." Pay off with the button tin / old file (beats 8, 11): someone did come looking once.
 - **Pip's triplicate habit:** paid off in ep 0003 (Pip does it unprompted). Retire or use sparingly.
+- **Night window (ep 0004):** Pip asked; Margo: "It's a good view." Still unexplained; payoff is the roof (beat 10). Margo's mug is a new recurring prop.
+- **Structure warning:** 0002-0004 all follow ask / deflect / soft admission / back to procedure. Vary it next.

@@ -15,3 +15,4 @@ Newly assigned to Margo. Exact age: "since Thursday."
 - **Kit:** `art/characters/pip.py`. Model sheet `art/model-sheets/pip.png`.
 - **Discovered (0002):** afraid of the tube but does the thing anyway; notices Margo's tells and says them out loud, kindly.
 - **Discovered (0003):** does triplicate unprompted and stamps competently; asks the question that opens Margo up ("Who keeps the third one?").
+- **Discovered (0004):** notices what doesn't add up (clock vs window) and accepts a non-answer gracefully, joining Margo at the view.
