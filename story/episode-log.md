@@ -21,3 +21,8 @@ New facts: case numbers exist (4471). Triplicate copies are white / yellow / pin
 The clock says 2:15 PM but the window says night. Pip asks why; Margo answers "Is it." and then, first time looking up, "It's a good view." Pip agrees, and Margo goes back to procedure ("Stamp the folder.").
 Appeared: Margo, Pip.
 New facts: the window is questioned on-page for the first time; Margo will not explain it and calls it a good view, sincerely. Margo's desk has a steaming mug. Pip now shares the view with her without comment. Blocking: window left, Margo's desk right. Note: episodes 0002-0004 share a shape (Pip asks, Margo deflects, soft admission, retreat into procedure); break it in 0005 (Margo-led setup or a silent panel).
+
+## 0005 – Please Handle (2026-10-28)
+A note from Director Hollis arrives by tube ("Please handle. -H."). Margo flinches, Pip asks what to handle, Margo says "He doesn't say," stamps it, and files it on a tall stack of identical notes in her drawer: "It's handled."
+Appeared: Margo, Pip (Hollis by note).
+New facts: first on-page Hollis note (typed, folded). Margo has received many near-identical notes and handles them all by stamping and filing; she never asks what they mean. Her drawer now holds the tin, the pink copies and the stack of Hollis notes. Margo's tube flinch is now silent (no excuse). Tube station on the left wall, Margo's desk far right. Prop added: props.note(big=False). Structure: silent opener plus insert panel, a break from 0002-0004.

@@ -100,3 +100,12 @@ def office_bg(w, h, floor_y=None, window_at=None, night=False):
     if window_at:
         out += f'<g transform="translate({window_at[0]},{window_at[1]})">{window(night=True)}</g>'
     return out
+
+
+def note(big=False):
+    """Hollis's tube note. origin: bottom-centre; small folded slip ~34x24, or big=True a ~300x190 close-up slip with typed text."""
+    if not big:
+        return (rect(-17, -24, 34, 24, fill="#fffdf4", sw=3, r=1) + line(-17, -24, 0, -12, w=2.5) + line(17, -24, 0, -12, w=2.5))
+    return (rect(-150, -190, 300, 190, fill="#fffdf4", sw=4, r=2)
+            + line(-110, -60, 110, -60, w=2.5, c="#9aa0a6")
+            + "")

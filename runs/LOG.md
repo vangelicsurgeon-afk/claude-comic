@@ -32,3 +32,9 @@ One entry per automated run (newest at the bottom).
 - art review: FIX (1 round) -> fixed Margo's balloons covering her face (p2, p4) and tails (p2, p3). Not re-reviewed by subagent; checked render myself. Polish left: p3 close-up Margo faces viewer, no window in frame; p4 folder not on desk, mug steam faint; p1 moon half under balloon tail.
 - problems / tool friction: `Panel.caption` takes a corner string, not coordinates. Draw Margo before `props.desk` so the desk hides her legs.
 - note to next run: beat 5 (Hollis note, "Please handle. -H."). Break the ask/deflect/admit structure: try a Margo-led or silent-panel setup.
+
+## 2026-10-28 06:55 ET · EPISODE 0005 "Please Handle"
+- script review: APPROVE (1 round); suggestions noted, not applied (structure still partly ask/deflect, kept for the stack visual)
+- art review: PASS (1 round); fixed own render issues beforehand (balloon order p3, tail, note in tube). Polish left: p1 mug floats away from Margo's hand, Pip's flame not bent in p1/p3, p3 Pip's tail long, p4 stamp not in hand and a loose second note beside the stamp, CHUNK floats.
+- problems / tool friction: none; python3 had deps.
+- note to next run: beat 6 (rust folder, bus waits two seconds). Try a different structure again; consider the roof or a location outside the desk. Use `p.add(..., rotate=)` for tilted props; raw <text> works via s.font_family.

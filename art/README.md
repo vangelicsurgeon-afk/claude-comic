@@ -14,7 +14,7 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
 
 ## Props (`art/props.py`)
 `desk(w)`, `folder(color)`, `mug(steam)`, `tube_station()`, `clipboard()`, `stamp()`,
-`paper_stack(n)`, `earring()`, `tin()`, `form(color)`, `window(night)`, `office_bg(w, h, floor_y, window_at, night)`.
+`paper_stack(n)`, `note(big)`, `earring()`, `note(big)`, `tin()`, `form(color)`, `window(night)`, `office_bg(w, h, floor_y, window_at, night)`.
 Origins are documented in the module docstring.
 
 ## Palette (`art/palette.py`)

@@ -12,3 +12,4 @@
 - **Pip's triplicate habit:** paid off in ep 0003 (Pip does it unprompted). Retire or use sparingly.
 - **Night window (ep 0004):** Pip asked; Margo: "It's a good view." Still unexplained; payoff is the roof (beat 10). Margo's mug is a new recurring prop.
 - **Structure warning:** 0002-0004 all follow ask / deflect / soft admission / back to procedure. Vary it next.
+- **Hollis notes (ep 0005):** first note on-page, "Please handle. -H." Margo has a drawer stack of them, all stamped "handled". Pay off later: one note that is different, or a note Margo can't stamp.
