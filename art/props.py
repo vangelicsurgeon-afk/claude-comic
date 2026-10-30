@@ -12,6 +12,9 @@ earring(scale)     origin: bottom-centre; silver hoop ~26 tall (draw it big for 
 tin()              origin: bottom-centre; round button tin ~40 wide, lid slightly ajar
 form(color)        origin: bottom-centre; one flat sheet ~44x56 (white, pink, yellow copies)
 office_bg(w, h, ...) full-panel background: wall, floor line, optional window
+street_bg(w, h)    full-panel rainy night street
+bus()              origin: bottom-centre of wheels; ~300x110 mustard city bus, side view, facing right
+runner()           origin: feet; ~90 tall commuter with umbrella running right
 """
 from .palette import *
 
@@ -109,3 +112,42 @@ def note(big=False):
     return (rect(-150, -190, 300, 190, fill="#fffdf4", sw=4, r=2)
             + line(-110, -60, 110, -60, w=2.5, c="#9aa0a6")
             + "")
+
+
+def street_bg(w, h, ground_y=None):
+    """Rainy night street: dark sky, kerb, wet road, a few rain streaks. Full panel."""
+    gy = ground_y if ground_y is not None else h * 0.72
+    out = f'<rect x="0" y="0" width="{w}" height="{h}" fill="{NIGHT}"/>'
+    for (x, y) in ((50, 40), (180, 70), (330, 30), (420, 90)):
+        out += circle(x, y, 2, fill=FLAME_CORE, w=0)
+    out += f'<rect x="0" y="{gy}" width="{w}" height="{h - gy}" fill="#3b4366"/>'
+    out += rect(-4, gy - 14, w + 8, 14, fill="#8d8aa0", sw=3.5)
+    for i in range(14):
+        x = 20 + i * (w / 13)
+        out += line(x, 20 + (i % 3) * 40, x - 10, 50 + (i % 3) * 40, w=2, c="#9fb4d8")
+    return out
+
+
+def bus(doors_open=False):
+    """Side view of a city bus facing right. origin: bottom-centre of the wheels line; ~300 wide, ~110 tall."""
+    out = rect(-150, -100, 300, 84, fill=MUSTARD, sw=4, r=10)
+    for i in range(4):
+        out += rect(-136 + i * 52, -88, 42, 34, fill="#d9ecf2", sw=3, r=3)
+    door_fill = "#1f1a24" if doors_open else "#d9ecf2"
+    out += rect(78, -90, 46, 62, fill=door_fill, sw=3.5, r=3) + line(101, -90, 101, -28, w=3)
+    out += rect(128, -88, 18, 34, fill="#d9ecf2", sw=3, r=3)
+    out += rect(-150, -34, 300, 6, fill=RUST, sw=0)
+    for x in (-90, 90):
+        out += circle(x, -14, 17, fill=INK, w=4) + circle(x, -14, 6, fill="#9aa0a6", w=2.5)
+    out += circle(142, -42, 4, fill=FLAME_CORE, w=2.5)
+    return out
+
+
+def runner(stride=True):
+    """Small commuter in a rust coat running right, holding an umbrella. origin: feet; ~90 tall."""
+    legs = path("M0,-34 L-14,0 M0,-34 L16,-8 L10,0", w=5) if stride else line(0, -34, 0, 0, w=5)
+    coat = path("M-12,-70 Q-18,-34 -14,-26 L16,-26 Q16,-50 8,-70 Z", fill=RUST, w=4)
+    head = circle(0, -80, 11, fill="#d9a07a", w=4)
+    umb = path("M-6,-90 L18,-60", w=3.5) + path("M0,-96 Q22,-110 40,-82 Q20,-90 0,-96 Z", fill=LAVENDER, w=3.5)
+    arm = path("M4,-62 L20,-72", w=4)
+    return legs + coat + arm + head + umb

@@ -13,3 +13,5 @@
 - **Night window (ep 0004):** Pip asked; Margo: "It's a good view." Still unexplained; payoff is the roof (beat 10). Margo's mug is a new recurring prop.
 - **Structure warning:** 0002-0004 all follow ask / deflect / soft admission / back to procedure. Vary it next.
 - **Hollis notes (ep 0005):** first note on-page, "Please handle. -H." Margo has a drawer stack of them, all stamped "handled". Pay off later: one note that is different, or a note Margo can't stamp.
+- **Rust folders / Case 4802 (ep 0006):** first urgent case. Margo counts a miracle's duration aloud before stamping. Optional payoff: the commuter reappears, or Margo remembers a case where two seconds were refused.
+- **Outside the office (ep 0006):** the city (rain, a street) can be shown, but never the Department. Use sparingly, for the beat-10 roof and beat-11 case.

@@ -26,3 +26,8 @@ New facts: the window is questioned on-page for the first time; Margo will not e
 A note from Director Hollis arrives by tube ("Please handle. -H."). Margo flinches, Pip asks what to handle, Margo says "He doesn't say," stamps it, and files it on a tall stack of identical notes in her drawer: "It's handled."
 Appeared: Margo, Pip (Hollis by note).
 New facts: first on-page Hollis note (typed, folded). Margo has received many near-identical notes and handles them all by stamping and filing; she never asks what they mean. Her drawer now holds the tin, the pink copies and the stack of Hollis notes. Margo's tube flinch is now silent (no excuse). Tube station on the left wall, Margo's desk far right. Prop added: props.note(big=False). Structure: silent opener plus insert panel, a break from 0002-0004.
+
+## 0006 – Two Seconds (2026-10-30)
+A rust (urgent) folder: Case 4802, "bus to wait, 2 seconds." The camera leaves the office for the first time to show a commuter running for a bus in the rain. Back at the desk Margo says "One." and the stamp comes down: she counts out the two seconds before she'll grant them.
+Appeared: Margo, Pip; an unnamed commuter.
+New facts: rust folders are urgent ("paperwork with a deadline"); first non-office panel (rainy street, 8:14 PM); Margo takes the smallest favors seriously and rehearses them; whether the runner caught the bus is left unshown. Props added: street_bg, bus, runner. Structure: held-silence ending, no excuse/tell exchange.

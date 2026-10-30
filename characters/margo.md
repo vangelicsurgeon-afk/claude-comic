@@ -16,3 +16,4 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 - **Discovered (0002):** startles at the pneumatic tube and deflects with a specific, flimsy excuse. Never admits it.
 - **Discovered (0003):** keeps the pink third copy of every case in her drawer "for someone who might come looking"; her softness shows in tiny rituals, never statements.
 - **Discovered (0004):** sincerely loves the night window ("It's a good view"); drinks something from a white mug at her desk; looks up from work only when she chooses to.
+- **Discovered (0006):** counts out a favor's duration aloud ("One.") before stamping it; treats two seconds as a real cost.

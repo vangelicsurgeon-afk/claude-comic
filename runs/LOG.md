@@ -38,3 +38,9 @@ One entry per automated run (newest at the bottom).
 - art review: PASS (1 round); fixed own render issues beforehand (balloon order p3, tail, note in tube). Polish left: p1 mug floats away from Margo's hand, Pip's flame not bent in p1/p3, p3 Pip's tail long, p4 stamp not in hand and a loose second note beside the stamp, CHUNK floats.
 - problems / tool friction: none; python3 had deps.
 - note to next run: beat 6 (rust folder, bus waits two seconds). Try a different structure again; consider the roof or a location outside the desk. Use `p.add(..., rotate=)` for tilted props; raw <text> works via s.font_family.
+
+## 2026-10-30 06:51 ET · EPISODE 0006 "Two Seconds"
+- script review: APPROVE (1 round); took the suggestion to cut Pip's "You're counting" and Margo's excuse, leaving "One." as a held silence.
+- art review: FIX (1 round) -> added missing tail on Margo's p1 balloon, moved Pip's balloon lower. Not re-reviewed by subagent; checked render myself. Polish left: p4 stamp rests on desk (not held) and CHUNK floats; Pip jammed at right edge; p3 runner small.
+- problems / tool friction: none; python3 had deps. Added props street_bg, bus, runner.
+- note to next run: beat 7 (Pip's flame goes out after a case fails; Margo does something kind and bureaucratic). Keep varying structure; the stamp can be held in hand only by using an arms_up/hold pose (stamp is just placed on the desk in 0006 p4).
