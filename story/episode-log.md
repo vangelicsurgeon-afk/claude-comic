@@ -31,3 +31,8 @@ New facts: first on-page Hollis note (typed, folded). Margo has received many ne
 A rust (urgent) folder: Case 4802, "bus to wait, 2 seconds." The camera leaves the office for the first time to show a commuter running for a bus in the rain. Back at the desk Margo says "One." and the stamp comes down: she counts out the two seconds before she'll grant them.
 Appeared: Margo, Pip; an unnamed commuter.
 New facts: rust folders are urgent ("paperwork with a deadline"); first non-office panel (rainy street, 8:14 PM); Margo takes the smallest favors seriously and rehearses them; whether the runner caught the bus is left unshown. Props added: street_bg, bus, runner. Structure: held-silence ending, no excuse/tell exchange.
+
+## 0007 – Form 9 (2026-11-02)
+Case 4790 (lavender) comes back from upstairs marked "Exceeds Small". Pip's flame all but goes out. Margo says nothing; she fills in Form 9, Request for Recess, approves it herself ("Duration: as long as needed") and sets her mug beside Pip. Pip asks if it's in triplicate. "Obviously. Pink copy's mine."
+Appeared: Margo, Pip.
+New facts: first on-page refusal; too-large (Medium) requests are returned by tube. Form 9 exists. Margo's kindness comes as paperwork, and she gives up her mug. Pip's triplicate question is now a comfort ritual. Margo keeps the pink copy of Pip's recess in her drawer. Structure: Margo acts, Pip receives, no ask/deflect.

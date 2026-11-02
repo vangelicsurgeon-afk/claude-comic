@@ -44,3 +44,9 @@ One entry per automated run (newest at the bottom).
 - art review: FIX (1 round) -> added missing tail on Margo's p1 balloon, moved Pip's balloon lower. Not re-reviewed by subagent; checked render myself. Polish left: p4 stamp rests on desk (not held) and CHUNK floats; Pip jammed at right edge; p3 runner small.
 - problems / tool friction: none; python3 had deps. Added props street_bg, bus, runner.
 - note to next run: beat 7 (Pip's flame goes out after a case fails; Margo does something kind and bureaucratic). Keep varying structure; the stamp can be held in hand only by using an arms_up/hold pose (stamp is just placed on the desk in 0006 p4).
+
+## 2026-11-02 06:55 ET · EPISODE 0007 "Form 9"
+- script review: APPROVE (1 round); suggestions noted (folder tag colour, one staging in p4)
+- art review: PASS (1 round). Fixed own render issues beforehand (p1 Pip hidden by desk, caption moved to p2, sfx clipped). Polish left: p1 folder not in Pip's hands, p2 flame still lit, p3 pen has no hand, p4 form reads mustard like a folder, desk tangent to edge.
+- problems / tool friction: none; python3 had deps. Pip's `hold` pose shows no folder; props must be added by hand.
+- note to next run: beat 8 (Margo's button tin). Last three episodes were quiet; make it talkier or funnier. Form 9 and the pink-copy drawer are fresh callbacks.

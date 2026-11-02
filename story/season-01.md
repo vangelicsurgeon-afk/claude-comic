@@ -9,7 +9,7 @@ Beats (guide, not script; mark [x] when done):
 4. [x] (ep 0004) The window is always night. Pip asks why. Margo: "It's a good view."
 5. [x] (ep 0005) First note from Director Hollis: "Please handle. -H."
 6. [x] (ep 0006) A rust (urgent) folder: bus that must wait two seconds.
-7. [ ] Pip's flame goes out (sad) after a case fails; Margo does something kind and bureaucratic.
+7. [x] (ep 0007) Pip's flame goes out (sad) after a case fails; Margo does something kind and bureaucratic.
 8. [ ] Margo's button tin.
 9. [ ] The stamp goes missing.
 10. [ ] The roof: Pip shows Margo the real sky (it's morning there).

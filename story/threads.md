@@ -15,3 +15,6 @@
 - **Hollis notes (ep 0005):** first note on-page, "Please handle. -H." Margo has a drawer stack of them, all stamped "handled". Pay off later: one note that is different, or a note Margo can't stamp.
 - **Rust folders / Case 4802 (ep 0006):** first urgent case. Margo counts a miracle's duration aloud before stamping. Optional payoff: the commuter reappears, or Margo remembers a case where two seconds were refused.
 - **Outside the office (ep 0006):** the city (rain, a street) can be shown, but never the Department. Use sparingly, for the beat-10 roof and beat-11 case.
+- **Form 9 / Request for Recess (ep 0007):** Margo approves open-ended durations without counting, unlike 0006. Pink copy is in her drawer. Callback: a Form 9 for Margo, or the drawer shown full of them.
+- **Medium Miracles (ep 0007):** "Exceeds Small" refusals hint at the 5th floor (Season 2). Case 4790's fate is unresolved.
+- **Next-episode note:** 0005-0007 are quiet; make 0008 (button tin) talkier or funnier.
