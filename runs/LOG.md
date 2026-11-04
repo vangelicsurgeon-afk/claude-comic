@@ -50,3 +50,9 @@ One entry per automated run (newest at the bottom).
 - art review: PASS (1 round). Fixed own render issues beforehand (p1 Pip hidden by desk, caption moved to p2, sfx clipped). Polish left: p1 folder not in Pip's hands, p2 flame still lit, p3 pen has no hand, p4 form reads mustard like a folder, desk tangent to edge.
 - problems / tool friction: none; python3 had deps. Pip's `hold` pose shows no folder; props must be added by hand.
 - note to next run: beat 8 (Margo's button tin). Last three episodes were quiet; make it talkier or funnier. Form 9 and the pink-copy drawer are fresh callbacks.
+
+## 2026-11-04 06:51 ET · EPISODE 0008 "Fourth Row"
+- script review: APPROVE (1 round); suggestions on button visibility and off-panel balloon noted.
+- art review: PASS (1 round). Fixed own issues beforehand (Margo hidden by desk, navy button ring on wrong button, button larger). Polish left: p1 Margo's balloon has no tail, p2 tin not shown, p4 Pip looks at viewer, pearl button small.
+- problems / tool friction: none; python3 had deps.
+- note to next run: beat 9 (stamp goes missing). Pip's eyes always face the viewer in close-ups; consider an eye-direction option in pip.py.

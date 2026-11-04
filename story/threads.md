@@ -18,3 +18,4 @@
 - **Form 9 / Request for Recess (ep 0007):** Margo approves open-ended durations without counting, unlike 0006. Pink copy is in her drawer. Callback: a Form 9 for Margo, or the drawer shown full of them.
 - **Medium Miracles (ep 0007):** "Exceeds Small" refusals hint at the 5th floor (Season 2). Case 4790's fate is unresolved.
 - **Next-episode note:** 0005-0007 are quiet; make 0008 (button tin) talkier or funnier.
+- **Button tin (ep 0008):** 211 tagged buttons, rows; used to close cases. Margo's mismatched pearly top button is "very well documented" (origin unexplained). Pay off in beat 11 with the old file; possibly she was a case herself.

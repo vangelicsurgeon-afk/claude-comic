@@ -36,3 +36,8 @@ New facts: rust folders are urgent ("paperwork with a deadline"); first non-offi
 Case 4790 (lavender) comes back from upstairs marked "Exceeds Small". Pip's flame all but goes out. Margo says nothing; she fills in Form 9, Request for Recess, approves it herself ("Duration: as long as needed") and sets her mug beside Pip. Pip asks if it's in triplicate. "Obviously. Pink copy's mine."
 Appeared: Margo, Pip.
 New facts: first on-page refusal; too-large (Medium) requests are returned by tube. Form 9 exists. Margo's kindness comes as paperwork, and she gives up her mug. Pip's triplicate question is now a comfort ritual. Margo keeps the pink copy of Pip's recess in her drawer. Structure: Margo acts, Pip receives, no ask/deflect.
+
+## 0008 – Fourth Row (2026-11-04)
+Case 4811: a navy coat needs one four-hole button. Margo sends Pip to the tin, which holds exactly 211 buttons in rows, each tagged with where it came from ("Green. Bus seat." "Brown. Laughed."). Navy is in the fourth row. Pip notices Margo's top cardigan button doesn't match; Margo: "It's very well documented."
+Appeared: Margo, Pip.
+New facts: the tin is a catalogue: 211 buttons, tagged, Margo knows count and rows by heart. Buttons are used to close cases. Margo's cardigan has one mismatched pearly top button with an unexplained, documented origin. Structure: Pip-led, talkier, deflection by documentation.
