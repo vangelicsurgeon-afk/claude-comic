@@ -19,3 +19,5 @@
 - **Medium Miracles (ep 0007):** "Exceeds Small" refusals hint at the 5th floor (Season 2). Case 4790's fate is unresolved.
 - **Next-episode note:** 0005-0007 are quiet; make 0008 (button tin) talkier or funnier.
 - **Button tin (ep 0008):** 211 tagged buttons, rows; used to close cases. Margo's mismatched pearly top button is "very well documented" (origin unexplained). Pay off in beat 11 with the old file; possibly she was a case herself.
+- **Stamp in the bun (ep 0009):** stamp found in Margo's bun, "filed". Don't explain. Margo's third "documentation/filing" deflection in a row (0008, 0009): rotate away next.
+- **Unread Hollis note (ep 0009):** a second note sits in the tube, unopened. Contents unknown; could pay off in the roof episode or later as the note Margo can't stamp.

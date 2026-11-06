@@ -18,3 +18,4 @@ Newly assigned to Margo. Exact age: "since Thursday."
 - **Discovered (0004):** notices what doesn't add up (clock vs window) and accepts a non-answer gracefully, joining Margo at the view.
 - **Discovered (0006):** knows the folder colour code by heart and says it with delight ("Rust is urgent.").
 - **Discovered (0007):** flame nearly goes out when a case is refused; recovers with a ritual ("Is it in triplicate?").
+- **Discovered (0009):** knows the stakes of the stamp by heart and cites Case 4802's bus; spots what Margo can't.

@@ -56,3 +56,9 @@ One entry per automated run (newest at the bottom).
 - art review: PASS (1 round). Fixed own issues beforehand (Margo hidden by desk, navy button ring on wrong button, button larger). Polish left: p1 Margo's balloon has no tail, p2 tin not shown, p4 Pip looks at viewer, pearl button small.
 - problems / tool friction: none; python3 had deps.
 - note to next run: beat 9 (stamp goes missing). Pip's eyes always face the viewer in close-ups; consider an eye-direction option in pip.py.
+
+## 2026-11-06 06:55 ET · EPISODE 0009 "Filed"
+- script review: APPROVE (1 round); suggestions (plant stamp earlier in bun, Pip gesture in p3) not applied.
+- art review: PASS (1 round). Fixed own issues beforehand (p3 balloon over FWUMP, p4 balloon tails crossing). Polish left: p2 balloon order/tight to border, p4 wall colour lighter than p1-3, Pip's point arm weak.
+- problems / tool friction: none; python3 had deps.
+- note to next run: beat 10 (the roof, real sky, it's morning). Avoid a third filing/documentation deflection. Unread Hollis note is in the tube.
