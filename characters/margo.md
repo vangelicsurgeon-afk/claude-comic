@@ -19,3 +19,5 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 - **Discovered (0006):** counts out a favor's duration aloud ("One.") before stamping it; treats two seconds as a real cost.
 - **Discovered (0007):** fills in Form 9 (Request for Recess) for Pip and lends her mug; kindness delivered as paperwork, pink copy kept.
 - **Discovered (0009):** files the stamp in her bun and calls it "filed"; tells everyone not to panic while panicking; orders Pip not to read Hollis notes.
+
+- Discovered (0010): knows the roof is morning and lets herself have two minutes of it; she smiles. Files nothing there.

@@ -46,3 +46,8 @@ New facts: the tin is a catalogue: 211 buttons, tagged, Margo knows count and ro
 The stamp is missing. Margo says "Nobody panic" and tears through her drawer; Pip cites the stakes (a bus not waiting). A Hollis note FWUMPs in and Margo orders Pip not to read it. Pip then spots the stamp handle sticking out of Margo's bun. "It's filed."
 Appeared: Margo, Pip (Hollis by unread note).
 New facts: Margo files the stamp in her bun; whether deliberate or absent-minded is never explained. The second Hollis note arrives unread and unhandled (contents unknown): the first note Margo can't stamp. Her tube flinch now comes with an order, not an excuse. Structure: Margo-led escalation with a last-panel reveal.
+
+## 0010 – Two Minutes (2026-11-09)
+Pip coaxes Margo through a small door marked ROOF. Up there, unlike the always-night window, it is morning. A silent panel of sunrise over the skyline, then Margo, softened, allows herself "Two minutes." Pip, who has picked up her habit of counting, answers "One fifty-nine."
+Appeared: Margo, Pip.
+New facts: the roof is reached by a ROOF door off the office; it has a water tank and a low parapet; it is sunrise there while the window says night (unexplained, and Margo knew). Margo smiles. Pip now counts durations aloud like Margo (0006 callback). Margo files nothing. Props added: sky_bg, roof_bg, water_tank, roof_door.

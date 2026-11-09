@@ -13,7 +13,7 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
   Flame height reflects mood.
 
 ## Props (`art/props.py`)
-`desk(w)`, `folder(color)`, `mug(steam)`, `tube_station()`, `clipboard()`, `stamp()`,
+`sky_bg(w,h)` (morning sky, sun, skyline), `roof_bg(w,h)` (rooftop + parapet over sky), `water_tank()`, `roof_door()` (door with ROOF sign). Also: `desk(w)`, `folder(color)`, `mug(steam)`, `tube_station()`, `clipboard()`, `stamp()`,
 `paper_stack(n)`, `note(big)`, `earring()`, `note(big)`, `tin()`, `form(color)`, `window(night)`, `street_bg(w,h)` (rainy night street), `bus()` (mustard bus, side view), `runner()` (commuter with umbrella), `office_bg(w, h, floor_y, window_at, night)`.
 Origins are documented in the module docstring.
 

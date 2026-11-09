@@ -12,7 +12,7 @@ Beats (guide, not script; mark [x] when done):
 7. [x] (ep 0007) Pip's flame goes out (sad) after a case fails; Margo does something kind and bureaucratic.
 8. [x] (ep 0008) Margo's button tin.
 9. [x] (ep 0009) The stamp goes missing.
-10. [ ] The roof: Pip shows Margo the real sky (it's morning there).
+10. [x] (ep 0010) The roof: Pip shows Margo the real sky (it's morning there).
 11. [ ] A lavender (sentimental) case that Margo has seen before, decades ago.
 12. [ ] Probation review: Pip's evaluation is written by Margo, in one line.
 

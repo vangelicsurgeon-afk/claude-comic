@@ -151,3 +151,55 @@ def runner(stride=True):
     umb = path("M-6,-90 L18,-60", w=3.5) + path("M0,-96 Q22,-110 40,-82 Q20,-90 0,-96 Z", fill=LAVENDER, w=3.5)
     arm = path("M4,-62 L20,-72", w=4)
     return legs + coat + arm + head + umb
+
+
+def sky_bg(w, h, horizon_y=None, sun_x=None):
+    """Morning sky: peach-to-gold bands, low sun, far skyline silhouette. Full panel.
+    horizon_y default 62% of h; sun sits half-risen on the skyline at sun_x (default centre)."""
+    hy = horizon_y if horizon_y is not None else h * 0.62
+    sx = sun_x if sun_x is not None else w * 0.5
+    bands = ["#f8d9b8", "#f9cfa6", "#fbc48f", "#fcdca0"]
+    out = ""
+    bh = hy / len(bands)
+    for i, c in enumerate(bands):
+        out += f'<rect x="0" y="{i * bh:.1f}" width="{w}" height="{bh + 1:.1f}" fill="{c}"/>'
+    out += f'<circle cx="{sx:.1f}" cy="{hy - 4:.1f}" r="{w * 0.11:.1f}" fill="{FLAME_CORE}" stroke="{INK}" stroke-width="4"/>'
+    for i, (cx, cy, rx) in enumerate(((w * 0.18, hy * 0.28, 60), (w * 0.82, hy * 0.2, 75))):
+        out += f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx}" ry="12" fill="#fff5e6" stroke="{INK}" stroke-width="3"/>'
+    # skyline silhouette
+    x, i = 0, 0
+    heights = [40, 70, 50, 95, 60, 45, 80, 55, 100, 65]
+    widths = [50, 40, 60, 45, 55, 50, 40, 60, 45, 70]
+    while x < w:
+        bw, bh2 = widths[i % 10], heights[i % 10]
+        out += f'<rect x="{x}" y="{hy - bh2:.1f}" width="{bw}" height="{bh2 + h * 0.4:.1f}" fill="#8a7a9a" stroke="{INK}" stroke-width="3"/>'
+        x += bw - 2; i += 1
+    return out
+
+
+def roof_bg(w, h, roof_y=None, sky=True, sun_x=None):
+    """Rooftop: sky behind, flat roof floor, low parapet along the front edge, water tank and vent pipes.
+    roof_y = y where the roof surface starts (default 72% of h)."""
+    ry = roof_y if roof_y is not None else h * 0.72
+    out = sky_bg(w, h, horizon_y=ry - 20, sun_x=sun_x) if sky else ""
+    out += f'<rect x="0" y="{ry}" width="{w}" height="{h - ry}" fill="#9a9aa8"/>'
+    out += line(0, ry, w, ry, w=4)
+    out += rect(-4, ry - 22, w + 8, 22, fill="#c9c3cf", sw=4)
+    return out
+
+
+def water_tank():
+    """origin: bottom-centre; roof water tank on stilts ~90 wide, 150 tall."""
+    return (line(-30, 0, -30, -50, w=5) + line(30, 0, 30, -50, w=5)
+            + rect(-45, -125, 90, 75, fill="#a8624a", sw=4, r=6)
+            + path("M-48,-125 L0,-150 L48,-125 Z", fill="#8c4f3c", w=4)
+            + line(-45, -100, 45, -100, w=2.5) + line(-45, -75, 45, -75, w=2.5))
+
+
+def roof_door():
+    """origin: bottom-centre; small stair-head door ~80 wide with 'ROOF' sign. Open=False."""
+    return (rect(-40, -120, 80, 120, fill="#6e8b8e", sw=4)
+            + rect(-30, -105, 60, 105, fill=WALL_DARK, sw=3.5)
+            + circle(20, -50, 4, fill=MUSTARD, w=2.5)
+            + rect(-26, -145, 52, 22, fill="#fff5c8", sw=3, r=2)
+            + f'<text x="0" y="-129" text-anchor="middle" font-family="Comic Neue, sans-serif" font-weight="700" font-size="15" fill="{INK}">ROOF</text>')

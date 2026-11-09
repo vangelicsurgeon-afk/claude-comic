@@ -21,3 +21,4 @@
 - **Button tin (ep 0008):** 211 tagged buttons, rows; used to close cases. Margo's mismatched pearly top button is "very well documented" (origin unexplained). Pay off in beat 11 with the old file; possibly she was a case herself.
 - **Stamp in the bun (ep 0009):** stamp found in Margo's bun, "filed". Don't explain. Margo's third "documentation/filing" deflection in a row (0008, 0009): rotate away next.
 - **Unread Hollis note (ep 0009):** a second note sits in the tube, unopened. Contents unknown; could pay off in the roof episode or later as the note Margo can't stamp.
+- **Roof / morning (ep 0010):** paid off the night-window gag; the roof is always morning, the window always night, never explained. Margo rations the sunrise ("Two minutes") and Pip counts it down. Possible later: Margo goes up alone; the unread Hollis note (0009) is still in the tube.
