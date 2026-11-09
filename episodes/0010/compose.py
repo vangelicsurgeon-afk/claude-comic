@@ -44,6 +44,6 @@ mx, my = W * 0.58, H * 1.5
 p.add(margo.draw("stand", "happy", "right"), x=mx, y=my, scale=1.8)
 p.add(pip.draw("stand", "happy", "right"), x=W * 0.2, y=H * 1.02, scale=1.3)
 p.balloon("Two minutes.", 20, 14, tail=(mx - 100, 150), max_width=140)
-p.balloon("One fifty-nine.", 20, 100, tail=(W * 0.2 + 20, 250), max_width=170)
+p.balloon("One fifty-nine.", 20, 160, tail=(W * 0.2 + 20, 250), max_width=170)
 
 s.save(pathlib.Path(__file__).parent / "comic.svg")

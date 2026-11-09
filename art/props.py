@@ -163,7 +163,7 @@ def sky_bg(w, h, horizon_y=None, sun_x=None):
     bh = hy / len(bands)
     for i, c in enumerate(bands):
         out += f'<rect x="0" y="{i * bh:.1f}" width="{w}" height="{bh + 1:.1f}" fill="{c}"/>'
-    out += f'<circle cx="{sx:.1f}" cy="{hy - 4:.1f}" r="{w * 0.11:.1f}" fill="{FLAME_CORE}" stroke="{INK}" stroke-width="4"/>'
+    out += f'<circle cx="{sx:.1f}" cy="{hy - 105:.1f}" r="{w * 0.11:.1f}" fill="{FLAME_CORE}" stroke="{INK}" stroke-width="4"/>'
     for i, (cx, cy, rx) in enumerate(((w * 0.18, hy * 0.28, 60), (w * 0.82, hy * 0.2, 75))):
         out += f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx}" ry="12" fill="#fff5e6" stroke="{INK}" stroke-width="3"/>'
     # skyline silhouette

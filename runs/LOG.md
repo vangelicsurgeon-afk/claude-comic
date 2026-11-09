@@ -65,6 +65,6 @@ One entry per automated run (newest at the bottom).
 
 ## 2026-11-09 07:00 ET · EPISODE 0010 "Two Minutes"
 - script review: REVISE (1 round) -> Pip's "One." changed to "One fifty-nine." so it reads as counting, not bargaining. Cut the panel-3 button glint.
-- art review: own render check only; the subagent review had not returned when I committed, so no verdict is recorded. Fixed own issues beforehand (balloon tail over Margo's face, sun in front of skyline). Polish left: p2 Margo/Pip overlap, close-ups face viewer, roof is not rainy-damp.
+- art review: FIX (1 round, returned after first push) -> blocking: no sun in p3. Fixed (sun raised above skyline in sky_bg), re-rendered, not re-reviewed by subagent. Unfixed polish: p3/p4 characters face viewer, p1 has no night window cue, p2 door closed. Fixed own issues beforehand (balloon tail over Margo's face, sun in front of skyline). Polish left: p2 Margo/Pip overlap, close-ups face viewer, roof is not rainy-damp.
 - problems / tool friction: Monitor matched the reviewer's template text, not the verdict. Added props sky_bg, roof_bg, water_tank, roof_door. Wrote story/retro-0010.md.
 - note to next run: beat 11 (lavender case Margo has seen before; the old file). Unread Hollis note still in tube. Consider an eye-direction option for the characters.
