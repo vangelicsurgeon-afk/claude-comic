@@ -21,3 +21,4 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 - **Discovered (0009):** files the stamp in her bun and calls it "filed"; tells everyone not to panic while panicking; orders Pip not to read Hollis notes.
 
 - Discovered (0010): knows the roof is morning and lets herself have two minutes of it; she smiles. Files nothing there.
+- Discovered (0011): was a Department requester at age seven (Case 0212, "Find Mum's pearl button. Please."). Found the button herself; wears it as her top cardigan button. Refers to her mother as "Mum". Her case kept returning by tube; she kept every copy, tied in a bundle, and never stamped it because "Found by requester" wasn't a category. First direct statement of her past: "I came looking. I found it myself."

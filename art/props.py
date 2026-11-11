@@ -15,6 +15,10 @@ office_bg(w, h, ...) full-panel background: wall, floor line, optional window
 street_bg(w, h)    full-panel rainy night street
 bus()              origin: bottom-centre of wheels; ~300x110 mustard city bus, side view, facing right
 runner()           origin: feet; ~90 tall commuter with umbrella running right
+old_file()         origin: bottom-centre; fat bundle of lavender folders tied with string, ~70x60
+request_slip()     origin: bottom-centre; small child's request slip ~50x38 with wobbly scribble lines
+big_form(extra)    origin: top-left; a ~260x150 form lying on a desk (seen at a slant-free angle);
+                   extra="FOUND BY REQUESTER" adds a hand-drawn ticked box at the bottom
 """
 from .palette import *
 
@@ -203,3 +207,37 @@ def roof_door():
             + circle(20, -50, 4, fill=MUSTARD, w=2.5)
             + rect(-26, -145, 52, 22, fill="#fff5c8", sw=3, r=2)
             + f'<text x="0" y="-129" text-anchor="middle" font-family="Comic Neue, sans-serif" font-weight="700" font-size="15" fill="{INK}">ROOF</text>')
+
+
+def old_file():
+    out = ""
+    for i in range(7):
+        y = -8 - i * 7
+        out += rect(-34 + (i % 2) * 3, y - 6, 68, 8, fill=LAVENDER if i % 3 else "#d9cff5", sw=2.5, r=1.5)
+    out += rect(-30, -66, 24, 8, fill=LAVENDER, sw=2.5, r=1.5)  # tab on top folder
+    out += line(4, -64, 4, 0, w=3, c="#8a6a4a") + line(-36, -30, 40, -30, w=3, c="#8a6a4a")
+    out += path("M4,-64 q-10,-12 -2,-14 q8,2 2,14 q10,-10 12,-2 q-4,6 -12,2", stroke="#8a6a4a", w=2.5)
+    return out
+
+
+def request_slip():
+    return (rect(-25, -38, 50, 38, fill="#fffdf4", sw=3, r=1)
+            + path("M-18,-28 q4,-4 8,0 t8,0 t8,0 t8,0", w=2.2)
+            + path("M-18,-18 q4,4 8,0 t8,0 t8,0", w=2.2)
+            + path("M-18,-9 q3,-3 6,0 t6,0", w=2.2))
+
+
+def big_form(extra=None, font="Comic Neue"):
+    out = rect(0, 0, 260, 150, fill="#ffffff", sw=3.5, r=2)
+    for i, y in enumerate((24, 44, 64)):
+        out += line(18, y, 150 if i == 2 else 240, y, w=2.5, c="#9aa0a6")
+    out += rect(18, 82, 14, 14, fill="none", sw=2.5) + rect(18, 104, 14, 14, fill="none", sw=2.5)
+    out += line(40, 90, 130, 90, w=2.5, c="#9aa0a6") + line(40, 112, 120, 112, w=2.5, c="#9aa0a6")
+    if extra:
+        # the hand-drawn box: wobbly, in pen, taller than the printed rows
+        out += path("M8,118 L252,120 L250,149 L10,147 Z", fill="#fff5c8", stroke=INK, w=3)
+        out += path("M16,123 L36,124 L35,143 L16,142 Z", fill="#ffffff", stroke=INK, w=3)
+        out += path("M18,132 L25,140 L40,118", stroke=RUST, w=4.5)
+        out += (f'<text x="44" y="142" font-family="{font}" font-weight="bold" font-size="19" '
+                f'fill="{INK}">{extra}</text>')
+    return out

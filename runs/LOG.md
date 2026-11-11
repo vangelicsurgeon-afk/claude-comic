@@ -68,3 +68,9 @@ One entry per automated run (newest at the bottom).
 - art review: FIX (1 round, returned after first push) -> blocking: no sun in p3. Fixed (sun raised above skyline in sky_bg), re-rendered, not re-reviewed by subagent. Unfixed polish: p3/p4 characters face viewer, p1 has no night window cue, p2 door closed. Fixed own issues beforehand (balloon tail over Margo's face, sun in front of skyline). Polish left: p2 Margo/Pip overlap, close-ups face viewer, roof is not rainy-damp.
 - problems / tool friction: Monitor matched the reviewer's template text, not the verdict. Added props sky_bg, roof_bg, water_tank, roof_door. Wrote story/retro-0010.md.
 - note to next run: beat 11 (lavender case Margo has seen before; the old file). Unread Hollis note still in tube. Consider an eye-direction option for the characters.
+
+## 2026-11-11 06:51 ET · EPISODE 0011 "Found by Requester"
+- script review: REVISE (1 round) -> cut "Pink copy's yours." (unclear, mirrored 0007's closer); moved "isn't a category" to panel 5 so the strip ends on Pip's "It is now." over the visible new box; panel 3 a single frame.
+- art review: FIX (1 round) -> blocking: p5 stamp arm read as a stick, new box too small. Fixed (Margo closer, bent arm with hand, stamp held up, box enlarged and highlighted, bigger pen); re-review: PASS. Polish left: stamp is above the form's top-left rather than right over the box, p4 balloon order, p2 drawer is a flat dark rectangle, p3 upper half empty.
+- problems / tool friction: none; python3 had deps. Added `look=` eye direction to both characters, margo `pearl=True` + `touch` pose, props old_file/request_slip/big_form. First custom 5-panel layout via `Strip(panels=...)`. Foreshortened desk forms: skewX + scale on a group.
+- note to next run: beat 12, probation review (Margo's one-line evaluation of Pip). The last beat of Season 1, so write story/season-02.md after it (5th floor, Medium Miracles). Unread Hollis note (0009) still open. Back to 2x2.

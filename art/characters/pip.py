@@ -1,6 +1,6 @@
 """Pip, the new hire: a small lavender wisp with a flame on its head. Origin at the feet, ~120 tall.
 
-draw(pose, expression, facing) -> SVG fragment string.
+draw(pose, expression, facing, look) -> SVG fragment string. look: side (default), front, up, down.
 poses: stand, point, wave, hold, arms_up, slump
 expressions: neutral, happy, worried, surprised, proud, sad, flustered
 The flame is Pip's mood ring: tall when happy/proud, tiny when sad, jittery when flustered.
@@ -30,11 +30,17 @@ def _flame(expression):
     return path(outer, fill=FLAME, w=3.5) + path(inner, fill=FLAME_CORE, stroke="none", w=0)
 
 
-def _face(expression):
+LOOK_Y = {"side": 1.5, "front": 1.5, "up": -4, "down": 5}
+
+
+def _face(expression, gaze="side"):
     cy = -66
+    gy = LOOK_Y[gaze]
+    gx = 0 if gaze == "front" else None
     def eye(x, r=9, look=2.5, h=1.0):
+        lx = look if gx is None else gx
         return (ellipse(x, cy, r, r * 1.15 * h, fill="#fff", w=3)
-                + circle(x + look, cy + 1.5, r * 0.5, fill=INK, w=0))
+                + circle(x + lx, cy + gy, r * 0.5, fill=INK, w=0))
     cheeks = ellipse(-24, cy + 14, 6, 4, fill=CHEEK, stroke="none", w=0) + \
              ellipse(24, cy + 14, 6, 4, fill=CHEEK, stroke="none", w=0)
     brows, mouth = "", ""
@@ -74,7 +80,7 @@ def _arm(side, hand):
     return path(d, stroke=INK, w=13) + path(d, stroke=LAVENDER, w=7) + circle(hx, hy, 6, fill=LAVENDER, w=3)
 
 
-def draw(pose="stand", expression="neutral", facing="right"):
+def draw(pose="stand", expression="neutral", facing="right", look="side"):
     parts = []
     squash = 4 if pose == "slump" else 0
     parts.append(ellipse(-14, -3, 12, 6, fill=INK, w=3) + ellipse(14, -3, 12, 6, fill=INK, w=3))
@@ -87,7 +93,7 @@ def draw(pose="stand", expression="neutral", facing="right"):
     hands = POSES[pose]
     parts.append(_arm("L", hands["L"]))
     parts.append(_arm("R", hands["R"]))
-    parts.append(_face("sad" if pose == "slump" else expression))
+    parts.append(_face("sad" if pose == "slump" else expression, look))
     if pose == "slump":
         parts.append("</g>")
     return flip_group("".join(parts), facing)

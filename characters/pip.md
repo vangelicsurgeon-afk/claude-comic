@@ -21,3 +21,4 @@ Newly assigned to Margo. Exact age: "since Thursday."
 - **Discovered (0009):** knows the stakes of the stamp by heart and cites Case 4802's bus; spots what Margo can't.
 
 - Discovered (0010): has absorbed Margo's habit of counting a duration aloud ("One fifty-nine."). Takes Margo to the roof, which they visit to think.
+- Discovered (0011): reads a case aloud even when it hurts; answers Margo's "isn't a category" by drawing the category onto the form ("It is now."). Pip now changes the forms, not just fills them.

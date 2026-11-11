@@ -1,8 +1,9 @@
 """Margo Voss, senior caseworker. Origin at the feet, ~235 units tall, drawn facing right.
 
 draw(pose, expression, facing) -> SVG fragment string.
-poses: stand, point, shrug, hold, arms_up, (for desk scenes, stand her behind props.desk)
+poses: stand, point, shrug, hold, arms_up, touch (right hand at the top button), (for desk scenes, stand her behind props.desk)
 expressions: neutral, deadpan, happy, worried, surprised, smug, annoyed
+look: side (default, toward facing), front, up, down. pearl=True draws the mismatched pearly top button (0008).
 """
 from ..palette import *
 from ..props import folder
@@ -15,6 +16,7 @@ POSES = {  # hand targets (L, R) and elbow bend offsets
     "shrug":   {"L": (-58, -128), "R": (58, -128)},
     "hold":    {"L": (6, -100), "R": (40, -104)},
     "arms_up": {"L": (-52, -206), "R": (52, -206)},
+    "touch":   {"L": (-34, -94), "R": (24, -140)},
 }
 
 
@@ -28,14 +30,17 @@ def _arm(side, hand):
             + circle(hx, hy, 8, fill=SKIN_MARGO, w=3.5))
 
 
-def _face(expression):
+LOOK = {"side": (3, 1), "front": (0, 1), "up": (2, -4), "down": (2, 5)}
+
+
+def _face(expression, look="side"):
     """Face drawn centered at (0,0) in head space; head radius 34."""
-    px = 3  # pupils look toward the facing direction
+    px, py = LOOK[look]  # pupil offset; "side" looks toward the facing direction
     brow, mouth, eyes = "", "", ""
     # eye openness / shape
     def eye(x, open_=1.0, pupil=True):
         lens = ellipse(x, 0, 11, 11, fill="#fff", w=3)
-        pup = circle(x + px, 1, 4.2 * (1 if open_ >= 0.6 else 1), fill=INK, w=0) if pupil else ""
+        pup = circle(x + px, py, 4.2 * (1 if open_ >= 0.6 else 1), fill=INK, w=0) if pupil else ""
         lid = ""
         if open_ < 1.0:  # half-lid drawn as a flat chord over the top
             h = 11 * (1 - open_) * 2
@@ -66,7 +71,7 @@ def _face(expression):
     return eyes + glasses + brow + mouth
 
 
-def draw(pose="stand", expression="neutral", facing="right"):
+def draw(pose="stand", expression="neutral", facing="right", look="side", pearl=False):
     parts = []
     if True:
         # legs + shoes
@@ -78,7 +83,10 @@ def draw(pose="stand", expression="neutral", facing="right"):
         parts.append(path("M-34,-62 L-28,-152 Q0,-164 28,-152 L34,-62 Q0,-52 -34,-62 Z", fill=MUSTARD))
         parts.append(line(0, -156, 0, -58, w=3))
         for y in (-132, -108, -84):
-            parts.append(circle(7, y, 3.2, fill=INK, w=0))
+            if pearl and y == -132:
+                parts.append(circle(7, y, 8, fill="#f6f1e6", w=2.5) + circle(4, y - 3, 2.2, fill="#ffffff", w=0))
+            else:
+                parts.append(circle(7, y, 3.2, fill=INK, w=0))
         parts.append(path("M-34,-62 Q0,-52 34,-62", stroke=INK, w=3))
     # collar + neck
     parts.append(rect(-8, -166, 16, 16, fill=SKIN_MARGO, sw=3.5))
@@ -96,6 +104,6 @@ def draw(pose="stand", expression="neutral", facing="right"):
     parts.append(circle(0, 0, 36, fill=SKIN_MARGO))
     parts.append(path("M-36,-4 Q-36,-40 0,-40 Q34,-40 36,-8 Q18,-40 -6,-36 Q-26,-34 -36,-4 Z",
                       fill=HAIR_GREY, w=3.5))
-    parts.append(f'<g transform="translate(0,4)">{_face(expression)}</g>')
+    parts.append(f'<g transform="translate(0,4)">{_face(expression, look)}</g>')
     parts.append("</g>")
     return flip_group("".join(parts), facing)

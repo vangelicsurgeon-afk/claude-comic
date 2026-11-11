@@ -22,3 +22,8 @@
 - **Stamp in the bun (ep 0009):** stamp found in Margo's bun, "filed". Don't explain. Margo's third "documentation/filing" deflection in a row (0008, 0009): rotate away next.
 - **Unread Hollis note (ep 0009):** a second note sits in the tube, unopened. Contents unknown; could pay off in the roof episode or later as the note Margo can't stamp.
 - **Roof / morning (ep 0010):** paid off the night-window gag; the roof is always morning, the window always night, never explained. Margo rations the sunrise ("Two minutes") and Pip counts it down. Possible later: Margo goes up alone; the unread Hollis note (0009) is still in the tube.
+- **Case 0212 / the pearl button (ep 0011): RESOLVED.** Margo was the requester at age seven ("Find Mum's pearl button"); she found it herself, it's her mismatched top button (0008); the case came back by tube for decades because "Found by requester" wasn't a category. Pip drew the box. Pays off: the very old file, pink copies "for someone who might come looking" (0003), the button tin's origin is now implied (she started keeping found buttons). Don't explain further; never show young Margo or her mum.
+- **FOUND BY REQUESTER (ep 0011):** a new category Pip invented. Callback: it turns up printed on official forms later (Hollis's office adopted it?), or other old returning cases now close.
+- **Unclosed cases return by tube (ep 0011):** world rule. Could seed Season 2: a drawer/room of returning cases.
+- **Unread Hollis note (ep 0009): still open.** Resolve in 0012 (probation review) or early Season 2.
+- **Structure note:** 0011 used 5 panels for the season's emotional centre; keep 2x2 the default.

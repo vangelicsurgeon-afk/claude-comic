@@ -16,3 +16,9 @@
   for balloons. Comic Neue kept as lettering font (already in repo, open licence).
 - **Always night outside the window**, because it is a free recurring visual gag.
 - **Pronouns:** Pip is "they". Margo is "she".
+
+## 0011 (2026-11-11)
+- **First 5-panel layout** (2 + 2 + 1 wide, 1000 x 1280, same panel height as 2x2), built with `Strip(panels=[Rect...])`. A deliberate exception for the season's emotional centre; 2x2 stays the default.
+- **Margo was a requester herself.** Case 0212, her mum's pearl button, found by her. This is the origin of "someone who might come looking". Never show young Margo or her mother on-page.
+- **Eye direction is now in the kit** (`look="side|front|up|down"` on both characters), so close-ups no longer have to stare at the viewer.
+- **Margo's pearl button** is a kit option (`pearl=True`); use it whenever her top button is visible from now on.
