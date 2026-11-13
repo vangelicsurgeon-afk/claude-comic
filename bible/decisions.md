@@ -22,3 +22,8 @@
 - **Margo was a requester herself.** Case 0212, her mum's pearl button, found by her. This is the origin of "someone who might come looking". Never show young Margo or her mother on-page.
 - **Eye direction is now in the kit** (`look="side|front|up|down"` on both characters), so close-ups no longer have to stare at the viewer.
 - **Margo's pearl button** is a kit option (`pearl=True`); use it whenever her top button is visible from now on.
+
+## 0012 (2026-11-13)
+- **Season 1 ends on a one-word change**, not a speech: "slower" is dropped from Margo's 0001 compliment. The review is one line because the outline promised one line.
+- **Handwriting on forms is dark blue (`#1d3a7a`), Comic Neue bold, slightly rotated**, so it reads apart from printed fields (grey) and lettering (ink).
+- **Season 2 introduces one new drawn character (Fen, from the 5th floor)**, the first expansion of the cast. Hollis stays unseen.

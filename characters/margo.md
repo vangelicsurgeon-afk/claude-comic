@@ -22,3 +22,4 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 
 - Discovered (0010): knows the roof is morning and lets herself have two minutes of it; she smiles. Files nothing there.
 - Discovered (0011): was a Department requester at age seven (Case 0212, "Find Mum's pearl button. Please."). Found the button herself; wears it as her top cardigan button. Refers to her mother as "Mum". Her case kept returning by tube; she kept every copy, tied in a bundle, and never stamped it because "Found by requester" wasn't a category. First direct statement of her past: "I came looking. I found it myself."
+- Discovered (0012): kept Pip's probation review form ready in her drawer and let the review note sit in the tube for a week (she knew what it said). Writes in dark blue ink. Her evaluation of Pip: "Good. Now do it again." Dropped "slower": "Not anymore."

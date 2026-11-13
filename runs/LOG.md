@@ -74,3 +74,9 @@ One entry per automated run (newest at the bottom).
 - art review: FIX (1 round) -> blocking: p5 stamp arm read as a stick, new box too small. Fixed (Margo closer, bent arm with hand, stamp held up, box enlarged and highlighted, bigger pen); re-review: PASS. Polish left: stamp is above the form's top-left rather than right over the box, p4 balloon order, p2 drawer is a flat dark rectangle, p3 upper half empty.
 - problems / tool friction: none; python3 had deps. Added `look=` eye direction to both characters, margo `pearl=True` + `touch` pose, props old_file/request_slip/big_form. First custom 5-panel layout via `Strip(panels=...)`. Foreshortened desk forms: skewX + scale on a group.
 - note to next run: beat 12, probation review (Margo's one-line evaluation of Pip). The last beat of Season 1, so write story/season-02.md after it (5th floor, Medium Miracles). Unread Hollis note (0009) still open. Back to 2x2.
+
+## 2026-11-13 06:51 ET · EPISODE 0012 "Not Slower"
+- script review: APPROVE (1 round); suggestions taken: Pip wary at the tube in p1, "one line" field underlined, form left unstamped, Margo not looking at Pip in p4.
+- art review: PASS (1 round). Fixed own issues beforehand (note and form covering Pip's face in p2/p4, pen placement). Polish applied after review: white form shown in Margo's hand in p2, p3 form shifted off the border, p4 balloons separated. Polish left: p4 Margo's gaze reads toward viewer more than window, p4 held form tiny, no window in p1-p2.
+- problems / tool friction: none; python3 had deps. Added props.review_form, props.pen.
+- note to next run: Season 1 is complete. Start story/season-02.md beat 1 (Pip's own desk and stamp). Fen (5th-floor raincloud) needs a character file, drawing function and model sheet before beat 5; consider building it a run early. Episode 0020 will need a retro.

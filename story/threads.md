@@ -27,3 +27,7 @@
 - **Unclosed cases return by tube (ep 0011):** world rule. Could seed Season 2: a drawer/room of returning cases.
 - **Unread Hollis note (ep 0009): still open.** Resolve in 0012 (probation review) or early Season 2.
 - **Structure note:** 0011 used 5 panels for the season's emotional centre; keep 2x2 the default.
+- **Unread Hollis note (0009): RESOLVED in 0012.** It was "Please review. -H." (Pip's probation review). Margo had the form ready; she knew.
+- **Margo's dry compliments: PAID OFF in 0012.** "Good. Now do it again, slower." (0001) became "Good. Now do it again." Don't escalate further for a long while; a future step down (just "Good.") should be saved for something big.
+- **Pip is no longer probationary (0012).** Season 2 can give Pip their own desk, their own stamp, and eventually someone to explain things to.
+- **Hollis notes always one word too vague:** "Please handle." (0005), "Please review." (0012). Keep the "Please ___. -H." pattern.

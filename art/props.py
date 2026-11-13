@@ -19,6 +19,9 @@ old_file()         origin: bottom-centre; fat bundle of lavender folders tied wi
 request_slip()     origin: bottom-centre; small child's request slip ~50x38 with wobbly scribble lines
 big_form(extra)    origin: top-left; a ~260x150 form lying on a desk (seen at a slant-free angle);
                    extra="FOUND BY REQUESTER" adds a hand-drawn ticked box at the bottom
+review_form(line, name, font)  origin: top-left; ~380x250 PROBATIONARY REVIEW form (close-up insert),
+                   printed fields plus an optional handwritten evaluation line
+pen()              origin: nib tip; ~110 long rust pen pointing down-left, held by a hand (Margo skin)
 """
 from .palette import *
 
@@ -240,4 +243,31 @@ def big_form(extra=None, font="Comic Neue"):
         out += path("M18,132 L25,140 L40,118", stroke=RUST, w=4.5)
         out += (f'<text x="44" y="142" font-family="{font}" font-weight="bold" font-size="19" '
                 f'fill="{INK}">{extra}</text>')
+    return out
+
+
+def review_form(handwritten=None, name="PIP", font="Comic Neue"):
+    t = lambda x, y, txt, size=18, weight="normal", fill=INK, extra="": (
+        f'<text x="{x}" y="{y}" font-family="{font}" font-weight="{weight}" font-size="{size}" '
+        f'fill="{fill}"{extra}>{txt}</text>')
+    out = rect(0, 0, 380, 250, fill="#ffffff", sw=4, r=2)
+    out += rect(0, 0, 380, 44, fill=WALL_DARK, sw=4, r=2)
+    out += t(18, 30, "PROBATIONARY REVIEW", 22, "bold", "#ffffff")
+    out += t(18, 80, "Name:", 18, "bold", "#6b6f75") + line(80, 84, 360, 84, w=2.5, c="#9aa0a6")
+    out += t(96, 79, name, 24, "bold")
+    out += t(18, 124, "Evaluation", 18, "bold", "#6b6f75") + t(118, 124, "(one line):", 18, "normal", "#6b6f75")
+    out += line(118, 128, 210, 128, w=2, c="#6b6f75")
+    out += line(18, 178, 360, 178, w=2.5, c="#9aa0a6")
+    out += line(18, 228, 360, 228, w=2.5, c="#c9cdd2")
+    if handwritten:
+        out += t(26, 170, handwritten, 30, "bold", "#1d3a7a", ' transform="rotate(-2 26 170)"')
+    return out
+
+
+def pen():
+    out = path("M0,0 L8,-14 L14,-10 Z", fill=INK, w=2)
+    out += f'<g transform="rotate(-55)">{rect(14, -6, 100, 12, fill=RUST, sw=3.5, r=5)}</g>'
+    # hand gripping the barrel
+    out += ellipse(42, -56, 22, 17, fill=SKIN_MARGO, w=3.5)
+    out += path("M30,-46 q-6,8 4,10", w=3)
     return out

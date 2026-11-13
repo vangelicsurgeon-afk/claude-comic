@@ -22,3 +22,4 @@ Newly assigned to Margo. Exact age: "since Thursday."
 
 - Discovered (0010): has absorbed Margo's habit of counting a duration aloud ("One fifty-nine."). Takes Margo to the roof, which they visit to think.
 - Discovered (0011): reads a case aloud even when it hurts; answers Margo's "isn't a category" by drawing the category onto the form ("It is now."). Pip now changes the forms, not just fills them.
+- Discovered (0012): passed probation (Margo's one-line review: "Good. Now do it again."). Read a Hollis note at Margo's request. Catches the missing word ("No 'slower'?"); Pip remembers everything Margo has ever said to them.

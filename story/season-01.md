@@ -14,8 +14,10 @@ Beats (guide, not script; mark [x] when done):
 9. [x] (ep 0009) The stamp goes missing.
 10. [x] (ep 0010) The roof: Pip shows Margo the real sky (it's morning there).
 11. [x] (ep 0011) A lavender (sentimental) case that Margo has seen before, decades ago. (It was her own: Case 0212, the pearl button.)
-12. [ ] Probation review: Pip's evaluation is written by Margo, in one line.
+12. [x] (ep 0012) Probation review: Pip's evaluation is written by Margo, in one line.
 
 Note after 0011: beat 12 (probation review) should also touch the unread Hollis note from 0009 if it can; keep it to one line from Margo. Then write season-02.md.
 
 Where it's headed: Season 2 widens the building (the 5th floor, "Medium Miracles").
+
+**Season 1 complete (0012).** Continues in `story/season-02.md`.
