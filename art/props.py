@@ -21,6 +21,7 @@ big_form(extra)    origin: top-left; a ~260x150 form lying on a desk (seen at a 
                    extra="FOUND BY REQUESTER" adds a hand-drawn ticked box at the bottom
 review_form(line, name, font)  origin: top-left; ~380x250 PROBATIONARY REVIEW form (close-up insert),
                    printed fields plus an optional handwritten evaluation line
+scribble(dry)      origin: start of the stroke; ~70 wide; dry=True grey scratch marks (no ink), else a clean blue ink line
 pen()              origin: nib tip; ~110 long rust pen pointing down-left, held by a hand (Margo skin)
 """
 from .palette import *
@@ -29,7 +30,8 @@ from .palette import *
 def desk(w=300):
     top = rect(-w / 2, 0, w, 14, fill=WOOD, sw=4, r=3)
     body = rect(-w / 2 + 14, 14, w - 28, 90, fill="#b98355", sw=4)
-    drawer = rect(-w / 2 + 30, 30, 90, 56, fill="#a87647", sw=3) + circle(-w / 2 + 75, 58, 4, fill=MUSTARD, w=2.5)
+    dw = min(90, w - 60)  # narrow desks (e.g. Pip's, w~140) get a narrower drawer
+    drawer = rect(-w / 2 + 30, 30, dw, 56, fill="#a87647", sw=3) + circle(-w / 2 + 30 + dw / 2, 58, 4, fill=MUSTARD, w=2.5)
     return body + drawer + top
 
 
@@ -271,3 +273,10 @@ def pen():
     out += ellipse(42, -56, 22, 17, fill=SKIN_MARGO, w=3.5)
     out += path("M30,-46 q-6,8 4,10", w=3)
     return out
+
+
+def scribble(dry=True):
+    if dry:
+        return (path("M0,0 l10,-6 l8,8 l10,-7 l9,7", stroke="#8a8378", w=2.5)
+                + path("M44,-2 l10,-6 l8,7", stroke="#8a8378", w=2.5))
+    return path("M0,0 q10,-10 20,-2 t20,-2 t20,-3 t16,0", stroke="#1d3a7a", w=3.5)

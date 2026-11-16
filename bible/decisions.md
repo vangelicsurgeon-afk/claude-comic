@@ -27,3 +27,7 @@
 - **Season 1 ends on a one-word change**, not a speech: "slower" is dropped from Margo's 0001 compliment. The review is one line because the outline promised one line.
 - **Handwriting on forms is dark blue (`#1d3a7a`), Comic Neue bold, slightly rotated**, so it reads apart from printed fields (grey) and lettering (ink).
 - **Season 2 introduces one new drawn character (Fen, from the 5th floor)**, the first expansion of the cast. Hollis stays unseen.
+
+## 0013 (2026-11-16)
+- **Pip's desk is on the far side of Margo's from the tube**, so "the same distance from the tube as mine" is literally true. Smaller (about 2/3 width), with a drawer. Keep this blocking: tube on the left, Margo's desk, Pip's desk on the right.
+- **Season 2 opens plain funny**, with only a crumb of ache, per the Season 1 look-back.

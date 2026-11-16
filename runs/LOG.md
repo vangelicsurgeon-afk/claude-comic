@@ -80,3 +80,9 @@ One entry per automated run (newest at the bottom).
 - art review: PASS (1 round). Fixed own issues beforehand (note and form covering Pip's face in p2/p4, pen placement). Polish applied after review: white form shown in Margo's hand in p2, p3 form shifted off the border, p4 balloons separated. Polish left: p4 Margo's gaze reads toward viewer more than window, p4 held form tiny, no window in p1-p2.
 - problems / tool friction: none; python3 had deps. Added props.review_form, props.pen.
 - note to next run: Season 1 is complete. Start story/season-02.md beat 1 (Pip's own desk and stamp). Fen (5th-floor raincloud) needs a character file, drawing function and model sheet before beat 5; consider building it a run early. Episode 0020 will need a retro.
+
+## 2026-11-16 06:52 ET · EPISODE 0013 "What Luck"
+- script review: APPROVE (1 round). Suggestions taken: Pip's desk is on the far side of Margo's from the tube, tube visible in p3, triplicate copies on Pip's desk, flame varied. Not taken: insert close-up in p4.
+- art review: FIX, then FIX, then PASS (2 fix rounds). Round 1: Pip clipped by the p1 border, p4 stamp not in Pip's hand, KA-CHUNK on Margo's side and over the moon. Round 2: p4 folder and stamp hung off Pip's desk. Polish left: Pip's p4 side-eye not clear (pupils forward), blue ink line reads navy, p3 dry scribble still small, Pip small in p1.
+- problems / tool friction: none; python3 had deps. Added margo poses `offer`/`write`, props.scribble, narrow-desk drawer in props.desk. Pip's `look="side"` with facing left doesn't read as a side-eye at small size; a stronger `look="side_far"` option would help.
+- note to next run: Season 2 beat 2 (FOUND BY REQUESTER printed on official forms). Leave the desks this time (tube, supply closet). Fen still needs a character file, drawing function and model sheet before beat 5. Blocking: tube on the left, Margo's desk, Pip's small desk on the right.

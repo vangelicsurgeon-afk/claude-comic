@@ -5,7 +5,7 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
 
 ## Characters (`art/characters/`)
 `draw(pose, expression, facing="right")` returns an SVG fragment, origin at the feet.
-- **margo.py** (~235 tall): `draw(pose, expression, facing, look="side", pearl=False)`. Poses `stand, point, shrug, hold (carries a folder), arms_up, touch (right hand at top button)`.
+- **margo.py** (~235 tall): `draw(pose, expression, facing, look="side", pearl=False)`. Poses `stand, point, shrug, hold (carries a folder), arms_up, touch (right hand at top button), offer (right arm out at chest height, e.g. handing over a stamp), write (both hands at desk height in front)`.
   `look`: side/front/up/down (pupils). `pearl=True` draws her mismatched pearly top button (use it from 0011 on)
   (for desk scenes, stand her behind `props.desk`).
   Expressions `neutral, deadpan, happy, worried, surprised, smug, annoyed`.
@@ -14,7 +14,7 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
   Flame height reflects mood.
 
 ## Props (`art/props.py`)
-`old_file()` (tied bundle of lavender folders), `request_slip()` (child's wobbly slip), `review_form(handwritten, name, font)` (380x250 PROBATIONARY REVIEW form, top-left origin, blue handwritten line; scale ~1.1 for an insert, ~0.2 when held), `pen()` (rust pen in a hand, origin at the nib), `big_form(extra, font)` (260x150 form, top-left origin; `extra` adds a ticked hand-drawn box with that label; skew/scale it to lie on a desk, see episodes/0011/compose.py). `sky_bg(w,h)` (morning sky, sun, skyline), `roof_bg(w,h)` (rooftop + parapet over sky), `water_tank()`, `roof_door()` (door with ROOF sign). Also: `desk(w)`, `folder(color)`, `mug(steam)`, `tube_station()`, `clipboard()`, `stamp()`,
+`old_file()` (tied bundle of lavender folders), `request_slip()` (child's wobbly slip), `review_form(handwritten, name, font)` (380x250 PROBATIONARY REVIEW form, top-left origin, blue handwritten line; scale ~1.1 for an insert, ~0.2 when held), `scribble(dry)` (grey scratch marks when dry=True, a blue ink line otherwise; ~70 wide), `pen()` (rust pen in a hand, origin at the nib), `big_form(extra, font)` (260x150 form, top-left origin; `extra` adds a ticked hand-drawn box with that label; skew/scale it to lie on a desk, see episodes/0011/compose.py). `sky_bg(w,h)` (morning sky, sun, skyline), `roof_bg(w,h)` (rooftop + parapet over sky), `water_tank()`, `roof_door()` (door with ROOF sign). Also: `desk(w)` (narrow widths like 120-190 work for Pip's small desk), `folder(color)`, `mug(steam)`, `tube_station()`, `clipboard()`, `stamp()`,
 `paper_stack(n)`, `note(big)`, `earring()`, `note(big)`, `tin()`, `form(color)`, `window(night)`, `street_bg(w,h)` (rainy night street), `bus()` (mustard bus, side view), `runner()` (commuter with umbrella), `office_bg(w, h, floor_y, window_at, night)`.
 Origins are documented in the module docstring.
 
@@ -26,3 +26,6 @@ Colour constants and small helpers `line, path, circle, ellipse, rect, flip_grou
 
 ## Layout variants
 Custom panel rects: `Strip(width, height, panels=[Rect(x, y, w, h), ...])`; see episodes/0011/compose.py for 2+2+1 wide.
+
+## Episode helpers worth reusing
+episodes/0013/compose.py has `held_stamp` (a stamp gripped by Margo's hand), `pen_on_paper` (a pen on its nib for two-shots) and `paper` (a sheet lying flat on a desk, skewed).

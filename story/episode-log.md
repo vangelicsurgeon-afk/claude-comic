@@ -61,3 +61,8 @@ New facts: Margo was a requester as a child (age seven) before she worked at the
 Season 1 finale. The Hollis note left unread in the tube since 0009 is still there; Margo tells Pip to read it: "Please review. -H." Review what? "You." Margo writes Pip's probationary review in one line, "Good. Now do it again." Pip notices "slower" is gone; Margo: "Not anymore."
 Appeared: Margo, Pip (Hollis by note).
 New facts: the unread note (0009) was the request for Pip's probation review, and Margo had the blank PROBATIONARY REVIEW form ready in her drawer (she knew). Pip has passed probation (implied) and is now a full caseworker. Margo's 0001 compliment "Good. Now do it again, slower." is now "Good. Now do it again." Review form printed fields: Name / Evaluation (one line). Handwritten ink on forms is dark blue. Kit: props.review_form(), props.pen().
+
+## 0013 – What Luck (2026-11-16)
+Season 2 opener. Margo gives Pip their own small desk, right beside hers and "the same distance from the tube as mine", then their own stamp: "Don't file it anywhere I would." Pip's first solo case is Case 4831, "Find a pen that works", requester anonymous, while Margo scribbles with a dead pen. Pip stamps it, Margo's pen writes, and Margo, not looking up, says "What luck."
+Appeared: Margo, Pip.
+New facts: Pip has their own small desk (with a drawer) on the far side of Margo's desk from the tube, and their own rust stamp. Pip is now a full caseworker with solo cases. Case 4831 (mustard): implied that Margo filed it anonymously so Pip's first case would be easy (never admitted). Margo is the first character to say the target reaction "What luck" on-page. Kit: margo poses `offer`, `write`; `props.scribble(dry)`; `props.desk(w)` now handles narrow desks.

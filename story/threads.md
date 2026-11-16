@@ -31,3 +31,7 @@
 - **Margo's dry compliments: PAID OFF in 0012.** "Good. Now do it again, slower." (0001) became "Good. Now do it again." Don't escalate further for a long while; a future step down (just "Good.") should be saved for something big.
 - **Pip is no longer probationary (0012).** Season 2 can give Pip their own desk, their own stamp, and eventually someone to explain things to.
 - **Hollis notes always one word too vague:** "Please handle." (0005), "Please review." (0012). Keep the "Please ___. -H." pattern.
+- **Pip's desk and stamp (0013):** Pip's small desk sits on the far side of Margo's from the tube; Pip's own rust stamp exists now. Callback: two stamps on two desks (a mix-up?); Pip's empty drawer (what will Pip keep in it?).
+- **Anonymous requests (0013):** Margo quietly filed Case 4831 ("Find a pen that works") so Pip's first solo case would be easy. Never admit it. Possible echo: Pip files an anonymous request for Margo later (pairs with beat 11, Form 9 for Margo).
+- **"What luck." (0013):** the world's target reaction said aloud by Margo, deadpan. Use sparingly; a later "What luck." from Pip or a requester could land.
+- **Structure note (0013):** plain-funny, desk-bound. Next episode should leave the desks (beat 2 can be at the tube or supply closet; beat 3/4 the stairwell).

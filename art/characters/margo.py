@@ -1,7 +1,7 @@
 """Margo Voss, senior caseworker. Origin at the feet, ~235 units tall, drawn facing right.
 
 draw(pose, expression, facing) -> SVG fragment string.
-poses: stand, point, shrug, hold, arms_up, touch (right hand at the top button), (for desk scenes, stand her behind props.desk)
+poses: stand, point, shrug, hold, arms_up, touch (right hand at the top button), offer (right arm out at chest height), write (both hands at desk height in front), (for desk scenes, stand her behind props.desk)
 expressions: neutral, deadpan, happy, worried, surprised, smug, annoyed
 look: side (default, toward facing), front, up, down. pearl=True draws the mismatched pearly top button (0008).
 """
@@ -17,6 +17,8 @@ POSES = {  # hand targets (L, R) and elbow bend offsets
     "hold":    {"L": (6, -100), "R": (40, -104)},
     "arms_up": {"L": (-52, -206), "R": (52, -206)},
     "touch":   {"L": (-34, -94), "R": (24, -140)},
+    "offer":   {"L": (-34, -94), "R": (88, -122)},
+    "write":   {"L": (24, -112), "R": (62, -114)},
 }
 
 
