@@ -35,3 +35,8 @@
 - **Anonymous requests (0013):** Margo quietly filed Case 4831 ("Find a pen that works") so Pip's first solo case would be easy. Never admit it. Possible echo: Pip files an anonymous request for Margo later (pairs with beat 11, Form 9 for Margo).
 - **"What luck." (0013):** the world's target reaction said aloud by Margo, deadpan. Use sparingly; a later "What luck." from Pip or a requester could land.
 - **Structure note (0013):** plain-funny, desk-bound. Next episode should leave the desks (beat 2 can be at the tube or supply closet; beat 3/4 the stairwell).
+- **FOUND BY REQUESTER on official forms (0014): RESOLVED.** Printed on the reprinted FORM 1 · CASE CLOSURE, approved "H." Hollis (or someone upstairs) reads what comes back. Callback: other old returning cases can now close this way.
+- **Margo's kept blank (0014):** one blank FORM 1 folded into her bun. Never explained. Pay off in beat 11 (Form 9 for Margo) or the season finale; maybe it turns up in the drawer next to Case 0212.
+- **The bun as a filing place:** used twice (0009 stamp, 0014 form). Rest it for a long while.
+- **Supply closet (0014):** larger inside, shown not said; door on the office wall. Can host later scenes (Fen lost in it?).
+- **Structure note (0014):** 0013 and 0014 both end with Margo hiding her care. Beats 3-4 should be talkier or plain funny with no hidden-care button.

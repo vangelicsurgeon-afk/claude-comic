@@ -9,6 +9,7 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
   `look`: side/front/up/down (pupils). `pearl=True` draws her mismatched pearly top button (use it from 0011 on)
   (for desk scenes, stand her behind `props.desk`).
   Expressions `neutral, deadpan, happy, worried, surprised, smug, annoyed`.
+  Pose `cup`: right hand at chest height for a mug (see `margo_mug` in episodes/0014/compose.py).
 - **pip.py** (~120 tall): `draw(pose, expression, facing, look="side")`, look = side/front/up/down. Poses `stand, point, wave, hold, arms_up, slump` (slump forces a sad face and squashes the body).
   Expressions `neutral, happy, worried, surprised, proud, sad, flustered`.
   Flame height reflects mood.
@@ -17,6 +18,8 @@ Import from the repo root: `sys.path.insert(0, ROOT)`; `from art.characters impo
 `old_file()` (tied bundle of lavender folders), `request_slip()` (child's wobbly slip), `review_form(handwritten, name, font)` (380x250 PROBATIONARY REVIEW form, top-left origin, blue handwritten line; scale ~1.1 for an insert, ~0.2 when held), `scribble(dry)` (grey scratch marks when dry=True, a blue ink line otherwise; ~70 wide), `pen()` (rust pen in a hand, origin at the nib), `big_form(extra, font)` (260x150 form, top-left origin; `extra` adds a ticked hand-drawn box with that label; skew/scale it to lie on a desk, see episodes/0011/compose.py). `sky_bg(w,h)` (morning sky, sun, skyline), `roof_bg(w,h)` (rooftop + parapet over sky), `water_tank()`, `roof_door()` (door with ROOF sign). Also: `desk(w)` (narrow widths like 120-190 work for Pip's small desk), `folder(color)`, `mug(steam)`, `tube_station()`, `clipboard()`, `stamp()`,
 `paper_stack(n)`, `note(big)`, `earring()`, `note(big)`, `tin()`, `form(color)`, `window(night)`, `street_bg(w,h)` (rainy night street), `bus()` (mustard bus, side view), `runner()` (commuter with umbrella), `office_bg(w, h, floor_y, window_at, night)`.
 Origins are documented in the module docstring.
+
+`supply_closet(open_)` (doorway 150x250 with impossibly deep shelves, SUPPLIES sign, door swung out on the right; origin bottom-centre), `ream(banded)` (~80x44 ream of forms with a paper band), `closure_form(font, ticked)` (380x260 close-up of FORM 1 · CASE CLOSURE with STAMPED / EXCEEDS SMALL (REFER UP) / FOUND BY REQUESTER and "Approved: H."; top-left origin), `folded_sheet()` (~34x24 folded form with teal header; draw before Margo to tuck behind her bun, see episodes/0014/compose.py).
 
 ## Palette (`art/palette.py`)
 Colour constants and small helpers `line, path, circle, ellipse, rect, flip_group`.

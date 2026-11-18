@@ -31,3 +31,8 @@
 ## 0013 (2026-11-16)
 - **Pip's desk is on the far side of Margo's from the tube**, so "the same distance from the tube as mine" is literally true. Smaller (about 2/3 width), with a drawer. Keep this blocking: tube on the left, Margo's desk, Pip's desk on the right.
 - **Season 2 opens plain funny**, with only a crumb of ache, per the Season 1 look-back.
+
+## 0014 (2026-11-18)
+- **The supply closet is drawn as an open doorway with an impossibly deep perspective of shelves** (`props.supply_closet`). Never remarked on in dialogue.
+- **Printed form text is Comic Neue bold in INK; field labels grey.** Printed boxes are crisp and straight, hand-drawn ones (0011) wobbly, so the difference reads.
+- **Margo holds her mug with the `cup` pose** when there's no desk.

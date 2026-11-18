@@ -280,3 +280,93 @@ def scribble(dry=True):
         return (path("M0,0 l10,-6 l8,8 l10,-7 l9,7", stroke="#8a8378", w=2.5)
                 + path("M44,-2 l10,-6 l8,7", stroke="#8a8378", w=2.5))
     return path("M0,0 q10,-10 20,-2 t20,-2 t20,-3 t16,0", stroke="#1d3a7a", w=3.5)
+
+
+def supply_closet(open_=True):
+    """Supply closet door in the wall. origin: bottom-centre of the doorway (on the floor line).
+    Doorway 150x250. open_=True shows an impossibly deep interior of receding shelves and a door swung out on the right."""
+    W2, T = 75, -250
+    bx0, bx1, by0, by1 = -16, 16, -152, -108  # far back wall
+    if not open_:
+        return (rect(-W2, T, 2 * W2, -T, fill="#8a6a3b", sw=4, r=2) + circle(W2 - 18, -120, 5, fill=MUSTARD, w=3)
+                + rect(-W2 - 8, T - 8, 2 * W2 + 16, 8 - T, fill="none", sw=4))
+    out = ""
+    # interior planes: ceiling, floor, side walls, back wall
+    out += path(f"M{-W2},{T} L{W2},{T} L{bx1},{by0} L{bx0},{by0} Z", fill="#3f5f63", w=0, stroke="none")
+    out += path(f"M{-W2},0 L{W2},0 L{bx1},{by1} L{bx0},{by1} Z", fill="#a8987a", w=0, stroke="none")
+    out += path(f"M{-W2},{T} L{bx0},{by0} L{bx0},{by1} L{-W2},0 Z", fill="#557c80", w=0, stroke="none")
+    out += path(f"M{W2},{T} L{bx1},{by0} L{bx1},{by1} L{W2},0 Z", fill="#4c7276", w=0, stroke="none")
+    out += rect(bx0, by0, bx1 - bx0, by1 - by0, fill="#2c4245", sw=0)
+    lerp = lambda a, b, t: a + (b - a) * t
+    cols = [MUSTARD, RUST, LAVENDER, "#ffffff", MUSTARD, "#fff3b0"]
+    k = 0
+    for side in (-1, 1):
+        fx, bx = side * W2, (bx1 if side > 0 else bx0)
+        for f in (0.22, 0.44, 0.66, 0.88):
+            yf, yb = lerp(T, 0, f), lerp(by0, by1, f)
+            # boxes sitting on this shelf, shrinking with depth
+            for d in (0.06, 0.32, 0.55, 0.72, 0.84):
+                x = lerp(fx, bx, d)
+                y = lerp(yf, yb, d)
+                sc = 1 - d * 0.82
+                bw, bh = 26 * sc, 30 * sc
+                x0 = x - (bw if side > 0 else 0) - side * 3 * sc
+                out += rect(x0, y - bh, bw, bh, fill=cols[k % len(cols)], sw=max(1, 2.5 * sc))
+                k += 1
+            out += line(fx, yf, bx, yb, w=3, c=INK)
+    # depth rails
+    for d in (0.35, 0.6, 0.78):
+        for side in (-1, 1):
+            x = lerp(side * W2, (bx1 if side > 0 else bx0), d)
+            out += line(x, lerp(T, by0, d), x, lerp(0, by1, d), w=1.5, c="#2c4245")
+    out += rect(bx0, by0, bx1 - bx0, by1 - by0, fill="none", sw=1.5)
+    # frame + open door (hinged on the right, swung toward the viewer)
+    out += rect(-W2 - 8, T - 8, 2 * W2 + 16, 8 - T, fill="none", sw=4)
+    out += line(-W2, T, -W2, 0, w=4) + line(W2, T, W2, 0, w=4) + line(-W2, T, W2, T, w=4)
+    out += path(f"M{W2+8},{T-8} L{W2+58},{T+14} L{W2+58},{18} L{W2+8},0 Z", fill="#8a6a3b", w=4)
+    out += circle(W2 + 48, -110, 5, fill=MUSTARD, w=3)
+    # sign
+    out += rect(-46, T - 44, 92, 26, fill="#fffdf4", sw=3, r=3)
+    out += (f'<text x="0" y="{T-25}" text-anchor="middle" font-family="Comic Neue" font-weight="bold" '
+            f'font-size="15" fill="{INK}">SUPPLIES</text>')
+    return out
+
+
+def ream(banded=True):
+    """A fat new ream of forms. origin: bottom-centre; ~80x44. banded=True adds the kraft paper band."""
+    out = path("M-40,-44 L40,-44 L40,0 L-40,0 Z", fill="#ffffff", w=4)
+    for y in (-34, -24, -14):
+        out += line(-36, y, 36, y, w=1.5, c="#c9cdd2")
+    if banded:
+        out += rect(-12, -46, 24, 48, fill="#d9b98a", sw=3)
+    return out
+
+
+def closure_form(font="Comic Neue", ticked=None):
+    """Close-up of the reprinted FORM 1 (case closure). origin: top-left; ~380x260.
+    Three printed tick boxes, the third being FOUND BY REQUESTER (adopted from Pip's hand-drawn box, ep 0011).
+    ticked: index of a box to tick in rust, or None."""
+    t = lambda x, y, txt, size=18, weight="bold", fill=INK: (
+        f'<text x="{x}" y="{y}" font-family="{font}" font-weight="{weight}" font-size="{size}" fill="{fill}">{txt}</text>')
+    out = rect(0, 0, 380, 260, fill="#ffffff", sw=4, r=2)
+    out += rect(0, 0, 380, 44, fill=WALL_DARK, sw=4, r=2)
+    out += t(18, 30, "FORM 1 · CASE CLOSURE", 22, "bold", "#ffffff")
+    out += t(18, 76, "Case no.", 16, "bold", "#6b6f75") + line(92, 80, 220, 80, w=2.5, c="#9aa0a6")
+    out += t(18, 102, "Closed by:", 16, "bold", "#6b6f75")
+    for i, label in enumerate(("STAMPED", "EXCEEDS SMALL (REFER UP)", "FOUND BY REQUESTER")):
+        y = 118 + i * 36
+        out += rect(22, y, 20, 20, fill="#ffffff", sw=3)
+        out += t(54, y + 17, label, 19)
+        if ticked == i:
+            out += path(f"M25,{y+10} L31,{y+17} L44,{y-4}", stroke=RUST, w=4.5)
+    out += line(18, 226, 362, 226, w=1.5, c="#c9cdd2")
+    out += t(18, 250, "Approved:", 17, "bold", "#6b6f75") + t(108, 251, "H.", 22, "bold", INK)
+    out += t(160, 250, "Rev. 11/26", 12, "normal", "#9aa0a6")
+    return out
+
+
+def folded_sheet():
+    """A blank form folded in half, ~34x24. origin: centre. For tucking into Margo's bun (ep 0014)."""
+    return (rect(-17, -12, 34, 24, fill="#ffffff", sw=3, r=1) + rect(-17, -12, 34, 7, fill=WALL_DARK, sw=3, r=1)
+            + path("M-17,12 L-11,6 L17,6", fill="none", stroke=INK, w=2.5)  # back half of the fold peeking out
+            + line(-11, 0, 9, 0, w=1.5, c="#c9cdd2"))
