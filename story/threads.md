@@ -40,3 +40,6 @@
 - **The bun as a filing place:** used twice (0009 stamp, 0014 form). Rest it for a long while.
 - **Supply closet (0014):** larger inside, shown not said; door on the office wall. Can host later scenes (Fen lost in it?).
 - **Structure note (0014):** 0013 and 0014 both end with Margo hiding her care. Beats 3-4 should be talkier or plain funny with no hidden-care button.
+- **Hollis notes (0015):** "Please come up. -H." then, after Margo literally stood on her desk, "Please come up further. -H." Hollis now answers what happens in the office. Escalation path: each dodge earns a follow-up note ("further" -> ?). The "further" note is unhandled at episode end: pay it off in beat 4 (stairwell) or beat 12.
+- **Margo's literal-compliance dodge (0015):** "Then he'd have said 'floor.'" A new excuse type; use once more at most.
+- **Structure note (0015):** plain funny, desk-bound again. Beat 4 must leave the desks (stairwell, door marked 5). Try a close-up in 0016.

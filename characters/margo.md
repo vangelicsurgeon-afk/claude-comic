@@ -25,3 +25,4 @@ Tall, grey bun, round glasses, mustard cardigan, rust tights. She.
 - Discovered (0012): kept Pip's probation review form ready in her drawer and let the review note sit in the tube for a week (she knew what it said). Writes in dark blue ink. Her evaluation of Pip: "Good. Now do it again." Dropped "slower": "Not anymore."
 - Discovered (0013): gave Pip a desk next to hers and a stamp. Secretly filed an anonymous request (Case 4831, a working pen) to make Pip's first solo case easy; when it was granted she said only "What luck." without looking up.
 - Discovered (0014): claims the forms are reprinted every forty years "to move a comma" (dry; she may have known). Keeps one blank copy of the form that carries her old case's category, folded into her bun. Says nothing about it.
+- Discovered (0015): dodges "Please come up" by literal compliance (stood on her desk: "Up."), then stamps it HANDLED: "Then he'd have said 'floor.'" Still startles at the tube.

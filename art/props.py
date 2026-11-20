@@ -370,3 +370,22 @@ def folded_sheet():
     return (rect(-17, -12, 34, 24, fill="#ffffff", sw=3, r=1) + rect(-17, -12, 34, 7, fill=WALL_DARK, sw=3, r=1)
             + path("M-17,12 L-11,6 L17,6", fill="none", stroke=INK, w=2.5)  # back half of the fold peeking out
             + line(-11, 0, 9, 0, w=1.5, c="#c9cdd2"))
+
+
+def note_card(lines, font="Comic Neue", handled=False, size=17, crease=False):
+    """Hollis note held up or lying flat, legible. origin: top-left; ~170 wide, height grows with lines.
+    lines: list of typed lines (INK, bold). handled=True adds a rotated rust HANDLED stamp impression."""
+    h = 30 + size * 1.3 * len(lines)
+    out = rect(0, 0, 170, h, fill="#fffdf4", sw=3.5, r=2)
+    if crease:  # fold line, kept near the top edge so it never strikes through text
+        out += line(0, 12, 170, 12, w=1.5, c="#d9d2bf")
+    for i, t in enumerate(lines):
+        y = 22 + size + i * size * 1.3 - size * 0.3
+        out += (f'<text x="14" y="{y:.1f}" font-family="{font}" font-weight="700" font-size="{size}" '
+                f'fill="{INK}">{t}</text>')
+    if handled:
+        out += (f'<g transform="translate(92,{h - 24}) rotate(-10)">'
+                f'<rect x="-62" y="-18" width="124" height="34" fill="none" stroke="{RUST}" stroke-width="3.5" rx="3"/>'
+                f'<text x="0" y="9" text-anchor="middle" font-family="{font}" font-weight="700" font-size="24" '
+                f'fill="{RUST}" letter-spacing="2">HANDLED</text></g>')
+    return out

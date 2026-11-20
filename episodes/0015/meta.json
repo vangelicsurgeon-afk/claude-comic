@@ -1,0 +1,21 @@
+{
+  "number": 15,
+  "title": "Come Up",
+  "date": "2026-11-20",
+  "status": "published",
+  "alt": "Four panels in the office at night. Panel 1: The brass pneumatic tube on the left wall goes FWUMP. Pip, a lavender candle-wisp, holds a small folded note and reads it, looking wary; Margo, a tall grey-haired caseworker in round glasses and a mustard cardigan, is behind her desk, startled by the tube but not looking up. Pip: \"'Please come up. -H.' Up where?\" Margo: \"He doesn't say.\" Panel 2: Margo is standing upright on top of her desk, note in hand, deadpan, next to her mug. Pip stares up at her with arms raised and a sweat drop. Margo: \"Up.\" Panel 3: Back behind her desk, Margo brings her rubber stamp down beside the note, now marked HANDLED in red: KA-CHUNK. Pip, worried: \"I think he meant the fifth floor.\" Margo: \"Then he'd have said 'floor.'\" Panel 4: The tube goes FWUMP again. Pip, smiling, holds up a second note that reads \"Please come up further. -H.\" Margo, behind her desk, half-lidded. Pip: \"He says 'further.'\"",
+  "hover": "Hollis has never needed more than one word. He has never needed fewer, either.",
+  "transcript": [
+    "Panel 1 – SFX: FWUMP",
+    "Panel 1 – PIP: \"Please come up. -H.\" Up where?",
+    "Panel 1 – MARGO: He doesn't say.",
+    "Panel 2 – MARGO (standing on her desk): Up.",
+    "Panel 3 – SFX: KA-CHUNK (the note is stamped HANDLED)",
+    "Panel 3 – PIP: I think he meant the fifth floor.",
+    "Panel 3 – MARGO: Then he'd have said \"floor.\"",
+    "Panel 4 – SFX: FWUMP",
+    "Panel 4 – NOTE: Please come up further. -H.",
+    "Panel 4 – PIP: He says \"further.\""
+  ],
+  "note": "Margo has been asked to go upstairs for forty years. She has found a great many ways to comply without going."
+}

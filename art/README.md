@@ -32,3 +32,5 @@ Custom panel rects: `Strip(width, height, panels=[Rect(x, y, w, h), ...])`; see 
 
 ## Episode helpers worth reusing
 episodes/0013/compose.py has `held_stamp` (a stamp gripped by Margo's hand), `pen_on_paper` (a pen on its nib for two-shots) and `paper` (a sheet lying flat on a desk, skewed).
+
+`note_card(lines, font, handled=False, size=17, crease=False)` (legible ~170-wide Hollis note, top-left origin; `handled=True` adds a rotated rust HANDLED stamp impression; skew it to lie on a desk, see `flat_card` in episodes/0015/compose.py).

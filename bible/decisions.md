@@ -36,3 +36,7 @@
 - **The supply closet is drawn as an open doorway with an impossibly deep perspective of shelves** (`props.supply_closet`). Never remarked on in dialogue.
 - **Printed form text is Comic Neue bold in INK; field labels grey.** Printed boxes are crisp and straight, hand-drawn ones (0011) wobbly, so the difference reads.
 - **Margo holds her mug with the `cup` pose** when there's no desk.
+
+## 0015 (2026-11-20)
+- **Hollis can answer.** For the first time a note responds to what just happened in the office. Never explain how he knows; never show him.
+- **Legible notes use `props.note_card`** (typed INK bold lines on a cream card, rust HANDLED stamp box). The small `props.note()` stays for notes seen at a distance.
