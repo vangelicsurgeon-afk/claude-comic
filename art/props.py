@@ -389,3 +389,92 @@ def note_card(lines, font="Comic Neue", handled=False, size=17, crease=False):
                 f'<text x="0" y="9" text-anchor="middle" font-family="{font}" font-weight="700" font-size="24" '
                 f'fill="{RUST}" letter-spacing="2">HANDLED</text></g>')
     return out
+
+
+# --------------------------------------------------------------------------- #
+# Stairwell (ep 0016)
+# --------------------------------------------------------------------------- #
+STAIR_WALL = "#d6d9cc"
+STAIR_DADO = "#9fb3a8"
+CONCRETE = "#b3b1aa"
+RAIN = "#8fa3b5"
+
+
+def stair_step(k, x_top, y_top, run=56, rise=26):
+    """Centre-x and tread y of step k below a landing edge at (x_top, y_top); k=0 is the landing itself
+    (returns x_top + run/2). The flight descends to the LEFT."""
+    if k == 0:
+        return x_top + run / 2, y_top
+    return x_top - (k - 0.5) * run, y_top + k * rise
+
+
+def stairwell_bg(w, h, x_top, y_top, run=56, rise=26):
+    """Full-panel stairwell: pale putty wall, green dado band following the stairs, a concrete flight
+    descending to the left from a landing edge at (x_top, y_top), landing floor to the right, handrail
+    over the flight. Use stair_step() to place feet on a tread."""
+    out = f'<rect x="0" y="0" width="{w}" height="{h}" fill="{STAIR_WALL}"/>'
+    # profile from right edge along landing, then down the steps
+    pts = [(w + 10, y_top), (x_top, y_top)]
+    x, y = x_top, y_top
+    while x > -run and y < h + rise:
+        y += rise; pts.append((x, y)); x -= run; pts.append((x, y))
+    prof = " L".join(f"{px:.1f},{py:.1f}" for px, py in pts)
+    # dado: band 90 above the nosing line
+    d = 92
+    slope = rise / run
+    xl = -20
+    yl = y_top + (x_top - xl) * slope
+    out += path(f"M{w+10},{y_top-d} L{x_top},{y_top-d} L{xl},{yl-d} L{xl},{h+40} L{w+10},{h+40} Z",
+                fill=STAIR_DADO, stroke="none", w=0)
+    out += path(f"M{w+10},{y_top-d} L{x_top},{y_top-d} L{xl},{yl-d}", stroke="#6f8a80", w=3)
+    out += path(f"M{prof} L{x - 20},{h + 40} L{w + 10},{h + 40} Z", fill=CONCRETE, w=4)
+    # handrail over the flight, ending in a post at the top
+    rh = 62
+    yl = y_top + (x_top + 6 - xl) * slope
+    for k in (1, 3, 5, 7):
+        sx, sy = stair_step(k, x_top, y_top, run, rise)
+        if sy < h + 10:
+            out += line(sx, sy, sx, y_top - rh + (x_top + 6 - sx) * slope, w=2.5, c="#6b7176")
+    out += line(x_top + 6, y_top - rh, xl, yl - rh, w=6, c=INK) + line(x_top + 6, y_top - rh, xl, yl - rh, w=2.5, c="#8d9aa3")
+    out += line(x_top + 6, y_top, x_top + 6, y_top - rh, w=5, c=INK)
+    return out
+
+
+def door_5(number="5", font="Comic Neue"):
+    """Plain stairwell fire door with a big painted floor number on the wall to its LEFT.
+    origin: bottom-centre of the door; door ~100x190, number ~70 tall centred at x=-110."""
+    out = rect(-58, -198, 116, 198, fill="#8d9aa3", sw=4)  # frame
+    out += rect(-50, -190, 100, 190, fill="#6f8a80", sw=4)
+    out += rect(-28, -168, 34, 44, fill="#c9d6dc", sw=3)  # narrow wired glass
+    out += line(-28, -146, 6, -146, w=1.2, c="#8d9aa3") + line(-11, -168, -11, -124, w=1.2, c="#8d9aa3")
+    out += rect(-42, -100, 84, 12, fill="#c9c3cf", sw=3, r=4)  # push bar
+    out += (f'<text x="-118" y="-96" text-anchor="middle" font-family="{font}" font-weight="700" '
+            f'font-size="96" fill="{WALL_DARK}">{number}</text>')
+    return out
+
+
+def puddle(drops=3):
+    """Rainwater seeping from under a door. origin: centre of the puddle on the floor; ~90 wide."""
+    out = path("M-44,0 Q-46,-7 -28,-8 Q-10,-11 8,-8 Q30,-10 44,-4 Q50,2 36,5 Q10,9 -20,6 Q-44,6 -44,0 Z",
+               fill=RAIN, w=3)
+    out += path("M-24,-2 Q-8,-5 6,-3", stroke="#c9d6dc", w=2.5)
+    for i, (dx, dy) in enumerate(((-26, -18), (2, -30), (28, -16))[:drops]):
+        out += path(f"M{dx},{dy-12} Q{dx+7},{dy} {dx},{dy+3} Q{dx-7},{dy} {dx},{dy-12} Z", fill=RAIN, w=2.5)
+    return out
+
+
+def form_fan(labels, font="Comic Neue", hand=SKIN_MARGO, spread=24):
+    """A hand of forms fanned like playing cards, each with a big bold number on a teal header
+    (left-aligned so every label shows past the next card).
+    origin: the grip (bottom-centre), hand drawn over it. Each sheet ~78x104 at scale 1."""
+    n = len(labels)
+    out = ""
+    for i, lab in enumerate(labels):
+        a = (i - (n - 1) / 2) * spread
+        out += (f'<g transform="rotate({a:.1f})"><g transform="translate(-39,-118)">'
+                + rect(0, 0, 78, 104, fill="#ffffff", sw=3, r=2) + rect(0, 0, 78, 30, fill=WALL_DARK, sw=3, r=2)
+                + f'<text x="7" y="23" font-family="{font}" font-weight="700" font-size="20" fill="#ffffff">{lab}</text>'
+                + line(10, 46, 66, 46, w=2, c="#c9cdd2") + line(10, 60, 66, 60, w=2, c="#c9cdd2") + line(10, 74, 50, 74, w=2, c="#c9cdd2")
+                + "</g></g>")
+    out += circle(0, -8, 13, fill=hand, w=3.5)
+    return out

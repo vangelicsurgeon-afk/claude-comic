@@ -43,3 +43,8 @@
 - **Hollis notes (0015):** "Please come up. -H." then, after Margo literally stood on her desk, "Please come up further. -H." Hollis now answers what happens in the office. Escalation path: each dodge earns a follow-up note ("further" -> ?). The "further" note is unhandled at episode end: pay it off in beat 4 (stairwell) or beat 12.
 - **Margo's literal-compliance dodge (0015):** "Then he'd have said 'floor.'" A new excuse type; use once more at most.
 - **Structure note (0015):** plain funny, desk-bound again. Beat 4 must leave the desks (stairwell, door marked 5). Try a close-up in 0016.
+- **"Further" note (0015): RESOLVED in 0016.** Margo went exactly one flight further and stopped at the door.
+- **Form 12 / Notice of Intent to Knock (0016):** 12-B the knock, 12-C being let in, 12-D being let out again. Hover text: 12-E is for knocking twice. Margo knows the 5th-floor door etiquette, so she may have been through it once. Seed for beat 12; don't resolve it before then. Callback: Pip fills in a Form 12 in triplicate; Fen arrives having filed a Form 12 the other way.
+- **Rain under the door (0016):** drizzle seeps from under the 5th-floor door, which plants Fen (beat 5). "Then it's a Medium problem."
+- **Stairwell (0016):** new recurring place (props.stairwell_bg + door_5). Beat 12 should end on this landing.
+- **Structure note (0016):** Margo explains things with forms again (0008, 0009, 0016). 0017 must not have Margo deflect with paperwork. Let Fen drive it.

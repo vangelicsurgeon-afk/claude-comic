@@ -27,8 +27,8 @@ a model sheet before first use.
 1. [x] (0013 What Luck) Pip's own desk: Margo gives them a desk (small, next to hers, as far from the tube as hers is) and their own stamp. Pip's first solo case.
 2. [x] (0014 Box Four) FOUND BY REQUESTER appears printed on a fresh batch of official forms. Somebody upstairs adopted Pip's category. Margo says nothing; she keeps one blank.
 3. [x] (0015 Come Up) A Hollis note: "Please come up. -H." Up where? Margo stamps it "handled" without going. Pip notices she didn't.
-4. [ ] The stairwell (next; after 0015's "further" note, Margo might take the stairs only to prove there's nothing to see, or Pip finds the stairwell alone and she follows). A door marked 5. Pip wants to knock; Margo explains, at length and with forms, why nobody does.
-5. [ ] Fen comes downstairs (first on-page visitor): drizzling, lost, needs a Small favour stamped and is too proud to say so.
+4. [x] (0016 Intent to Knock) The stairwell (after 0015's "further" note, Margo might take the stairs only to prove there's nothing to see, or Pip finds the stairwell alone and she follows). A door marked 5. Pip wants to knock; Margo explains, at length and with forms, why nobody does.
+5. [ ] (NEXT) Fen comes downstairs (0016 planted rain seeping under the 5th-floor door; Fen could arrive dripping, by the stairwell door or by tube) (first on-page visitor): drizzling, lost, needs a Small favour stamped and is too proud to say so.
 6. [ ] Case 4790 (refused "Exceeds Small" in 0007) comes back by tube, as unclosed cases do (0011 rule).
 7. [ ] Pip goes upstairs alone. The 5th floor: brighter, emptier, its window shows late afternoon (the floors have different times; never explained).
 8. [ ] Margo's idea: split Case 4790 into many Small miracles, each one stampable. Enormous paperwork. Pip loves it.

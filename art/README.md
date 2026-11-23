@@ -34,3 +34,6 @@ Custom panel rects: `Strip(width, height, panels=[Rect(x, y, w, h), ...])`; see 
 episodes/0013/compose.py has `held_stamp` (a stamp gripped by Margo's hand), `pen_on_paper` (a pen on its nib for two-shots) and `paper` (a sheet lying flat on a desk, skewed).
 
 `note_card(lines, font, handled=False, size=17, crease=False)` (legible ~170-wide Hollis note, top-left origin; `handled=True` adds a rotated rust HANDLED stamp impression; skew it to lie on a desk, see `flat_card` in episodes/0015/compose.py).
+
+## Stairwell (ep 0016)
+`stairwell_bg(w, h, x_top, y_top, run=56, rise=26)`: full-panel stairwell with pale putty wall, green dado band, and a concrete flight descending to the LEFT from a landing edge at (x_top, y_top), plus a handrail. `stair_step(k, x_top, y_top)` returns (x, y) for feet on step k (k=0 is the landing). `door_5(number, font)`: grey-green fire door ~116x198 with a big teal painted number to its left (origin bottom-centre of the door). `puddle(drops)`: ~90-wide grey rain puddle with up to 3 drops (origin centre; reuse for Fen's drizzle). `form_fan(labels, font, hand, spread)`: forms fanned like cards with left-aligned header numbers and a Margo hand at the grip (origin grip). For a close-up, use Margo at scale 1.6 with pose `offer` and put the fan at her hand (see episodes/0016/compose.py). Constants: STAIR_WALL, STAIR_DADO, CONCRETE, RAIN.
