@@ -3,7 +3,7 @@ import pathlib, sys
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT)); sys.path.insert(0, str(ROOT / "tools"))
 from comic import Strip
-from art.characters import margo, pip
+from art.characters import margo, pip, fen
 from art.palette import PAPER, INK
 
 OUT = ROOT / "art" / "model-sheets"
@@ -40,3 +40,6 @@ sheet("margo", margo, ["stand", "point", "shrug", "hold", "arms_up"],
 sheet("pip", pip, ["stand", "point", "wave", "hold", "arms_up", "slump"],
       ["neutral", "happy", "worried", "surprised", "proud", "sad", "flustered"],
       "stand", 1.2, 0, 150, (150, 1.35))
+sheet("fen", fen, ["stand", "point", "wave", "hold", "tie", "arms_up"],
+      ["neutral", "polite", "proud", "worried", "surprised", "sad", "flustered"],
+      "stand", 0.85, 0, 170, (150, 1.05))

@@ -40,3 +40,8 @@
 ## 0015 (2026-11-20)
 - **Hollis can answer.** For the first time a note responds to what just happened in the office. Never explain how he knows; never show him.
 - **Legible notes use `props.note_card`** (typed INK bold lines on a cream card, rust HANDLED stamp box). The small `props.note()` stays for notes seen at a distance.
+
+## 0016 (2026-11-23)
+- **First stairwell.** The stairwell is pale putty with a green dado. It is deliberately duller than the teal office, because the in-between floors are nobody's.
+- **Form 12 series** (Notice of Intent to Knock) is the reason nobody knocks. Margo knowing 12-C and 12-D is left as a hint that she went through once.
+- **Fen built a run early**, before beat 5. Fen is a grey cloud with a teal tie (WALL_DARK, the Department's colour, worn formally). Their mood gauge is drizzle, which mirrors Pip's flame. The arms come from the cloud's lower sides, behind the body. Fen floats over a floor shadow. Pronoun: they.

@@ -20,8 +20,7 @@ Margo climbing one flight of stairs.
 **Fen**: a Medium Miracles caseworker from the 5th floor. A small grey raincloud in
 a neat tie, floating; drizzles when stressed, which is often. Speaks in
 initiatives and acronyms; thinks Small is adorable. Secretly envies how much
-Margo's floor actually notices people. They. Build `art/characters/fen.py` plus
-a model sheet before first use.
+Margo's floor actually notices people. They. BUILT in 2026-11-23's run: characters/fen.md, art/characters/fen.py, art/model-sheets/fen.png.
 
 ## Beats (guide, not script; mark [x] when done)
 1. [x] (0013 What Luck) Pip's own desk: Margo gives them a desk (small, next to hers, as far from the tube as hers is) and their own stamp. Pip's first solo case.
