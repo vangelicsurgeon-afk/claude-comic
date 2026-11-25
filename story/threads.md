@@ -48,3 +48,9 @@
 - **Rain under the door (0016):** drizzle seeps from under the 5th-floor door, which plants Fen (beat 5). "Then it's a Medium problem."
 - **Stairwell (0016):** new recurring place (props.stairwell_bg + door_5). Beat 12 should end on this landing.
 - **Structure note (0016):** Margo explains things with forms again (0008, 0009, 0016). 0017 must not have Margo deflect with paperwork. Let Fen drive it.
+- **Rain under the door (0016): RESOLVED in 0017.** It was Fen, locked out on the stairwell side.
+- **Fen (0017):** first on-page visitor. Proud, never asks directly, spins every problem ("Locked in. To the outside."). Said "...What luck." quietly after a Small miracle got them home. Callback: Fen pretends it never happened; Fen comes back with another "super small" ask; Fen's stairwell audit (hover: "more doorstops").
+- **The doorstop (0017):** a rust rubber doorstop now props the 5th-floor door. Is it still there? It could be the way Pip goes upstairs alone (beat 7), or it could be gone by then.
+- **"Good choice." (0017):** Margo approves of anonymous requests, a wink at 0013. Don't push it further.
+- **Fen's puddle on the 4th floor (0017):** an unresolved bit of rain left in the office. Optional gag.
+- **Structure note (0017):** Fen-driven, plain funny with a small ache from Fen. Margo had one line. 0018 (beat 6, Case 4790 returns) can be quieter and Pip-led, with Margo back in focus. Avoid another Margo paperwork-deflection.

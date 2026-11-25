@@ -440,10 +440,23 @@ def stairwell_bg(w, h, x_top, y_top, run=56, rise=26):
     return out
 
 
-def door_5(number="5", font="Comic Neue"):
+def door_5(number="5", font="Comic Neue", ajar=False):
     """Plain stairwell fire door with a big painted floor number on the wall to its LEFT.
-    origin: bottom-centre of the door; door ~100x190, number ~70 tall centred at x=-110."""
+    origin: bottom-centre of the door; door ~100x190, number ~70 tall centred at x=-110.
+    ajar=True: the door swings inward a little on its LEFT hinge, a warm late-afternoon light
+    shows in the gap on the right, and a rust rubber doorstop is wedged under it."""
     out = rect(-58, -198, 116, 198, fill="#8d9aa3", sw=4)  # frame
+    if ajar:
+        out += rect(-50, -190, 100, 190, fill="#ffd98a", sw=4)  # light beyond
+        out += path("M-50,0 L-50,-190 L-12,-184 L-12,-5 Z", fill="#6f8a80", w=4)  # door, foreshortened
+        out += path("M-40,-172 L-24,-171 L-24,-128 L-40,-129 Z", fill="#c9d6dc", w=3)
+        out += path("M-46,-102 L-16,-100 L-16,-90 L-46,-91 Z", fill="#c9c3cf", w=3)
+        out += path("M50,0 L50,-190 L-12,-184 L-12,-5 Z", fill="#ffe7b0", w=0)
+        out += line(50, 0, 50, -190, w=4)
+        out += path("M-14,0 L56,0 L-14,-28 Z", fill=RUST, w=3.5)  # doorstop wedge
+        out += (f'<text x="-118" y="-96" text-anchor="middle" font-family="{font}" font-weight="700" '
+                f'font-size="96" fill="{WALL_DARK}">{number}</text>')
+        return out
     out += rect(-50, -190, 100, 190, fill="#6f8a80", sw=4)
     out += rect(-28, -168, 34, 44, fill="#c9d6dc", sw=3)  # narrow wired glass
     out += line(-28, -146, 6, -146, w=1.2, c="#8d9aa3") + line(-11, -168, -11, -124, w=1.2, c="#8d9aa3")

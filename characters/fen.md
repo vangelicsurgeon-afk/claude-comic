@@ -17,3 +17,6 @@ height off the floor. They.
   5th-floor door (0016) is Fen's. Never explain how a cloud fills in forms.
 - **Kit:** `art/characters/fen.py` (`draw(pose, expression, facing, look, drizzle)`). Model sheet
   `art/model-sheets/fen.png`. Built 2026-11-23, before first appearance.
+
+## Appearances
+- **0017 Light Mist:** first on-page. Locked out on the stairwell side of the 5th-floor door, and too proud to say so ("auditing the stairwell door", "Locked in. To the outside."). Gave the requester as "Anonymous". Pip stamped it, and a doorstop that happened to be there got Fen home. Corporate sign-off "Great outcome. Let's circle back.", then, quietly, "...What luck." Tie tell used twice. Drizzle stopped once Fen was home.

@@ -1,0 +1,22 @@
+{
+  "number": 17,
+  "title": "Light Mist",
+  "date": "2026-11-25",
+  "status": "published",
+  "alt": "Four panels. Panel 1: In the teal office at night, a small grey raincloud wearing a teal tie floats in front of Margo's desk. It holds a clipboard and drizzles lightly onto a puddle on the floor. Margo, the tall caseworker in round glasses and a mustard cardigan, looks at it deadpan from behind her desk. Pip, the small lavender candle-wisp, has both arms up at their little desk and stares at the rain in delight. Panel 2: Closer on the cloud, Fen, who tugs at their tie with a nervous, flustered face. A sweat drop shows and the rain is heavier. Pip looks up at them, working it out. Panel 3: Seen from the other side of the office. Pip, smiling, brings their stamp down on a request slip at their desk. Fen hovers in the middle, tugging their tie and dripping into a small puddle. Margo writes at her desk on the right without looking up. Panel 4: In the stairwell, the fire door beside a big painted 5 stands open. Warm, late-afternoon light shows through the gap, and a rust-coloured rubber doorstop is wedged under the door. Fen floats by the door, dry now, smiling and looking back. Pip waves from the top of the stairs.",
+  "hover": "Fen has since filed a stairwell audit. Recommendation: more doorstops.",
+  "transcript": [
+    "Panel 1 – FEN: Hi. Fen, Medium. Quick ask. Super small.",
+    "Panel 1 – PIP: You're raining.",
+    "Panel 1 – FEN: Light mist.",
+    "Panel 2 – FEN: I'm auditing the stairwell door. The one that shuts behind you.",
+    "Panel 2 – PIP: You're locked out.",
+    "Panel 2 – FEN: Locked in. To the outside.",
+    "Panel 3 – PIP: Requester?",
+    "Panel 3 – FEN: Anonymous.",
+    "Panel 3 – MARGO: Good choice.",
+    "Panel 4 – FEN: Great outcome. Let's circle back.",
+    "Panel 4 – FEN: ...What luck."
+  ],
+  "note": "Our first visitor. Fen is from upstairs, where they do outcomes, not luck. Still, a doorstop is a doorstop."
+}

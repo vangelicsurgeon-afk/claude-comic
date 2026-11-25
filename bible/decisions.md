@@ -45,3 +45,9 @@
 - **First stairwell.** The stairwell is pale putty with a green dado. It is deliberately duller than the teal office, because the in-between floors are nobody's.
 - **Form 12 series** (Notice of Intent to Knock) is the reason nobody knocks. Margo knowing 12-C and 12-D is left as a hint that she went through once.
 - **Fen built a run early**, before beat 5. Fen is a grey cloud with a teal tie (WALL_DARK, the Department's colour, worn formally). Their mood gauge is drizzle, which mirrors Pip's flame. The arms come from the cloud's lower sides, behind the body. Fen floats over a floor shadow. Pronoun: they.
+
+## 0017 (2026-11-25)
+- **Fen's first appearance is Fen's episode.** Margo gets one line so she doesn't deflect with paperwork for a third time; Pip runs the case.
+- **The 5th-floor stairwell door locks behind you.** The fix was a Small miracle (a doorstop that happened to be there), stamped by Pip. Small can help Medium quietly, which seeds beat 10.
+- **What's behind the 5th-floor door is still never shown**, only its warm late-afternoon light (#ffd98a / #ffe7b0).
+- **Reverse angles in the office are allowed** when balloon order needs them (0017 p3). The default blocking (tube left, Margo's desk, Pip's desk right) still holds for establishing shots.
