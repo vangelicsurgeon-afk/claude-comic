@@ -51,3 +51,9 @@
 - **The 5th-floor stairwell door locks behind you.** The fix was a Small miracle (a doorstop that happened to be there), stamped by Pip. Small can help Medium quietly, which seeds beat 10.
 - **What's behind the 5th-floor door is still never shown**, only its warm late-afternoon light (#ffd98a / #ffe7b0).
 - **Reverse angles in the office are allowed** when balloon order needs them (0017 p3). The default blocking (tube left, Margo's desk, Pip's desk right) still holds for establishing shots.
+
+## 0018 (2026-11-27)
+- **Case 4790 is "One good day for my dad. The whole day."** A day is the first request too long to be Small, which makes beat 8's split (into minutes) concrete. The requester and dad stay unnamed.
+- **0018 mirrors 0007 on purpose** (same opening line, same tube, same folder), so Pip's steady flame is the story.
+- **Pip's drawer holds Case 4790.** The open drawer is `props.desk(w, drawer_open=True, in_drawer=...)`.
+- **p4 dropped the night window** to avoid a tangent with Margo's head. The window is a running gag, not a rule for every panel.

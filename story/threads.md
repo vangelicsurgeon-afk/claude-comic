@@ -54,3 +54,7 @@
 - **"Good choice." (0017):** Margo approves of anonymous requests, a wink at 0013. Don't push it further.
 - **Fen's puddle on the 4th floor (0017):** an unresolved bit of rain left in the office. Optional gag.
 - **Structure note (0017):** Fen-driven, plain funny with a small ache from Fen. Margo had one line. 0018 (beat 6, Case 4790 returns) can be quieter and Pip-led, with Margo back in focus. Avoid another Margo paperwork-deflection.
+- **Case 4790 (0018):** "One good day for my dad. The whole day." Back by tube; now in Pip's drawer (resolves "what will Pip keep in it?"). Upstairs: "a day isn't small." Margo counted it: 1,440 minutes ("only"). Beat 8 pays this off (split into Small miracles: minutes, maybe seconds; hover text says she's started on the 86,400 seconds). Beat 9 shows the dad's ordinary lucky day; never show the requester's face in close-up, keep it a stranger.
+- **"Mine did." (0018):** Margo's first plain reference to Case 0212 without a deflection. Don't make her open up further for a while; let it sit.
+- **Pip and the tube (0018):** Pip no longer startles at the FWUMP. Margo still might.
+- **Structure note (0018):** quiet, Pip-led, mirrored 0007 on purpose. 0019 (beat 7, Pip upstairs alone) should be plain funny and outward: the 5th floor, brighter and emptier, late afternoon in the window. Fen could be the guide. Check whether the doorstop (0017) is still there.

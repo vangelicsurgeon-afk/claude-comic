@@ -28,9 +28,9 @@ Margo's floor actually notices people. They. BUILT in 2026-11-23's run: characte
 3. [x] (0015 Come Up) A Hollis note: "Please come up. -H." Up where? Margo stamps it "handled" without going. Pip notices she didn't.
 4. [x] (0016 Intent to Knock) The stairwell (after 0015's "further" note, Margo might take the stairs only to prove there's nothing to see, or Pip finds the stairwell alone and she follows). A door marked 5. Pip wants to knock; Margo explains, at length and with forms, why nobody does.
 5. [x] (0017 Light Mist) Fen comes downstairs (0016 planted rain seeping under the 5th-floor door; Fen could arrive dripping, by the stairwell door or by tube) (first on-page visitor): drizzling, lost, needs a Small favour stamped and is too proud to say so.
-6. [ ] (NEXT) Case 4790 (refused "Exceeds Small" in 0007) comes back by tube, as unclosed cases do (0011 rule).
-7. [ ] Pip goes upstairs alone (the 0017 doorstop might still be propping the door). The 5th floor: brighter, emptier, its window shows late afternoon (the floors have different times; never explained).
-8. [ ] Margo's idea: split Case 4790 into many Small miracles, each one stampable. Enormous paperwork. Pip loves it.
+6. [x] (0018 Fourteen Hundred and Forty) Case 4790 (refused "Exceeds Small" in 0007) comes back by tube, as unclosed cases do (0011 rule).
+7. [ ] (NEXT) Pip goes upstairs alone (the 0017 doorstop might still be propping the door). The 5th floor: brighter, emptier, its window shows late afternoon (the floors have different times; never explained).
+8. [ ] Margo's idea (seeded in 0018: "only fourteen hundred and forty minutes"): split Case 4790 into many Small miracles, each one stampable. Enormous paperwork. Pip loves it.
 9. [ ] The split case, done: one quiet panel of the requester's ordinary lucky day, made of tiny luck.
 10. [ ] Fen and Margo: a Form exchange (Medium needs Small's sign-off for once). Respect, in triplicate.
 11. [ ] Pip fills in a Form 9 (Request for Recess) for Margo, pink copy kept by Pip.

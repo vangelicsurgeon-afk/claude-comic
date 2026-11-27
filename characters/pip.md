@@ -27,3 +27,4 @@ Newly assigned to Margo. Exact age: "since Thursday."
 - Discovered (0014): fetches stationery from the supply closet; reads new forms the moment they arrive; their hand-drawn category is now printed official, and they say so out loud (the episode's one exclamation mark).
 - Discovered (0015): fetches notes from the tube now (still wary); says "fifth floor" out loud; enjoys it, smiling, when Hollis outmanoeuvres Margo ("He says 'further.'").
 - Discovered (0016): floats ahead up the stairs and would have knocked on the 5th-floor door without a second thought. Spotted the rain under the door.
+- Discovered (0018): no longer startles at the tube; when Case 4790 came back their flame stayed lit. Keeps the returned case in their own drawer (its first contents) rather than sending it back. Reads requests aloud.

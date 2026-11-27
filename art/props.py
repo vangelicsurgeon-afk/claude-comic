@@ -27,12 +27,51 @@ pen()              origin: nib tip; ~110 long rust pen pointing down-left, held 
 from .palette import *
 
 
-def desk(w=300):
+def desk(w=300, drawer_open=False, in_drawer=""):
+    """Desk seen from the front; origin at the top-left-centre of the desktop (x centred, y = top).
+    drawer_open=True pulls the drawer out toward the viewer: a dark interior shows above its front.
+    in_drawer: an SVG fragment drawn inside the open drawer (origin at the interior's bottom-centre,
+    i.e. it is hidden below by the drawer front), e.g. a folder going in (ep 0018)."""
     top = rect(-w / 2, 0, w, 14, fill=WOOD, sw=4, r=3)
     body = rect(-w / 2 + 14, 14, w - 28, 90, fill="#b98355", sw=4)
     dw = min(90, w - 60)  # narrow desks (e.g. Pip's, w~140) get a narrower drawer
-    drawer = rect(-w / 2 + 30, 30, dw, 56, fill="#a87647", sw=3) + circle(-w / 2 + 30 + dw / 2, 58, 4, fill=MUSTARD, w=2.5)
-    return body + drawer + top
+    x0 = -w / 2 + 30
+    if not drawer_open:
+        drawer = rect(x0, 30, dw, 56, fill="#a87647", sw=3) + circle(x0 + dw / 2, 58, 4, fill=MUSTARD, w=2.5)
+        return body + drawer + top
+    cx = x0 + dw / 2
+    hole = rect(x0, 30, dw, 56, fill="#3a2a22", sw=3)
+    # the pulled-out drawer: side walls in perspective, interior, then a front lower and wider
+    inner = (path(f"M{x0 - 6},{54} L{x0},{30} L{x0 + dw},{30} L{x0 + dw + 6},{54} Z", fill="#5a3f2c", w=3)
+             + rect(x0 + 2, 32, dw - 4, 10, fill="#3a2a22", sw=0))
+    contents = f'<g transform="translate({cx},{60})">{in_drawer}</g>' if in_drawer else ""
+    front = rect(x0 - 8, 54, dw + 16, 50, fill="#a87647", sw=3.5, r=2) + circle(cx, 78, 4.5, fill=MUSTARD, w=2.5)
+    return body + hole + top + inner + contents + front
+
+
+def refused_tag(font="Comic Neue"):
+    """Small rust REFUSED tag on a string, origin at the string's top (tie it to a folder corner)."""
+    return (line(0, 0, 6, 10, w=2, c=INK)
+            + f'<g transform="translate(6,10) rotate(12)">'
+            + rect(-4, 0, 44, 18, fill=RUST, sw=2.5, r=2) + circle(0, 9, 2.2, fill=PAPER, w=1.5)
+            + f'<text x="20" y="13.5" text-anchor="middle" font-family="{font}" font-weight="700" '
+              f'font-size="9.5" fill="#ffffff">REFUSED</text></g>')
+
+
+def open_folder(color=LAVENDER, slip=True):
+    """A folder held open toward the reader, ~130 x 90, origin at the bottom-centre (the spine).
+    slip=True clips props.request_slip-style wobbly lines inside the right half."""
+    out = (path("M0,0 L-64,-6 L-66,-88 L-2,-82 Z", fill=color, w=3.5)
+           + path("M0,0 L64,-6 L66,-88 L2,-82 Z", fill=color, w=3.5)
+           + path("M-66,-88 L-66,-96 L-44,-96 L-38,-87", fill=color, w=3.5)
+           + line(0, 0, 0, -82, w=2.5, c="#b9aee0"))
+    if slip:
+        out += (path("M10,-12 L56,-16 L57,-74 L11,-70 Z", fill="#fffdf4", w=3)
+                + path("M18,-60 q4,-4 8,0 t8,0 t8,0 t8,0", w=2.2)
+                + path("M18,-47 q4,4 8,0 t8,0 t8,0", w=2.2)
+                + path("M18,-34 q3,-3 6,0 t6,0 t6,0", w=2.2)
+                + rect(26, -78, 18, 10, fill="#9aa0a6", sw=2.5, r=1))  # clip
+    return out
 
 
 def folder(color=MUSTARD):
